@@ -39,8 +39,8 @@ a:hover{
 }
 
 h1{
-  font-family: Arial, Helvetica;
-  font-size: 138px;
+  font-family: Helvetica,Arial;
+  font-size: 142px;
   line-height: 140px;
   margin-bottom: -118px;
   font-weight: 100;
@@ -50,7 +50,7 @@ h1{
 }
 
 h3{
-  font-family: Arial, Helvetica;
+  font-family: Helvetica,Arial ;
   font-size: 120px;
   line-height: 140px;
    font-weight: 100;
