@@ -222,9 +222,10 @@ transform-origin: 0 0;
 }
 .photo_description_container{
   position: absolute;
-  background-color: rgba(229,229,229,0.9);
+  background-color: rgba(160,160,160,0.9);
   opacity: 0;
   cursor:url(../images/AM_cursor.cur),pointer;
+
 }
 .photo_description{
   position: relative;
@@ -258,7 +259,7 @@ transform-origin: 0 0;
 
 .navbar_link{
   text-decoration: none;
-  color:#919191;
+  color:#bdbdbd;
   float: left;
   font-size: 1.2em;
   line-height: 1.4em;
