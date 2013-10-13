@@ -565,6 +565,7 @@ opacity: 0;
   #container_navbar{
   	left: 10px;
     top: 0px;
+    margin-top: -40px;
   }
   .navbar_link{
     font-size: 15px;
