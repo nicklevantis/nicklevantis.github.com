@@ -517,7 +517,6 @@ opacity: 0;
 @media screen and (max-width: 560px) {
 
 
-body{background: none;}
 
 #logo2_txt {
 opacity: 0;
@@ -558,8 +557,8 @@ opacity: 0;
   }
   #content_container{
     top: 100px;
-    width: 90%;
-    margin-left:-20px;
+    width: 85%;
+    margin-left:0px;
    
   }
   #container_navbar{
