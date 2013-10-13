@@ -154,7 +154,7 @@ transform-origin: 0% 0%;
 opacity: 0;
   position: absolute;
   left: -10%;
-  bottom: -20%;
+  bottom: -22%;
    font-size: 3.70em;
   line-height: 130px;
   color: #b7b7b7;
@@ -175,8 +175,8 @@ transform-origin: 0% 0%;
 opacity: 0;
   position: absolute;
   left: -10%;
-  bottom: -25%;
-   font-size: 3.2em;
+  bottom: -27%;
+   font-size: 3.26em;
   line-height: 130px;
   color: #b7b7b7;
   font-weight: 600;
@@ -213,6 +213,7 @@ transform-origin: 0% 0%;
  
 }
 
+#entry_blog{opacity: 0;}
 
 .photo_container{
   float: left;
@@ -242,8 +243,19 @@ transform-origin: 0% 0%;
   width: 1030px;
   margin: 0 50% 0 50%;
   left: -570px;
- s
+ 
 }
+
+
+#container_navbar2{
+  position: absolute;
+  top: 15px;
+  width: 1030px;
+  margin: 0 50% 0 50%;
+  left: -570px;
+ 
+}
+
 .navbar_link{
   text-decoration: none;
   color:#919191;
@@ -466,6 +478,13 @@ font-size: 15px;
     left: 0px;
   }
   
+  #container_navbar2{
+  position: absolute;
+  top: 80px;
+  width: 90%;
+  margin:  0 5% 0 5%;
+  left: 0px;
+ }
  #logo_txt {
   position: absolute;
   left: -9.39%;
@@ -578,6 +597,12 @@ opacity: 0;
     top: 40px;
   }
   
+   #container_navbar2{
+  position: absolute;
+  top: 40px;
+  }
+
+  
   #text_about{
     font-size: 18px;
     line-height: 24px;
@@ -585,7 +610,7 @@ opacity: 0;
   }
   
   #entries  {
-   max-width: 320px;
+   max-width: 800px;
    width:100%;
 	margin:0px auto 0px 20px;
 	text-align:left;
@@ -656,7 +681,7 @@ opacity: 0;
   }
   
   #entries  {
-   max-width: 320px;
+   max-width: 600px;
    width:100%;
 	margin:0px auto 0px 10px;
 	text-align:left;
@@ -719,6 +744,15 @@ opacity: 0;
     margin-left: -10px;
     width: 100%;
   }
+  
+   #container_navbar2{
+  left: 0px;
+    top: 0px;
+    margin-top: -80px;
+    margin-left: -10px;
+    width: 100%;
+  }
+
   .navbar_link{
     font-size: 15px;
     line-height: 26px;
@@ -756,10 +790,10 @@ opacity: 0;
 #entries  {
    max-width: 320px;
    width:100%;
-	margin:0px auto 0px 20px;
+	margin:0px auto;
 	text-align:left;
-	padding:15px;
-	
+	padding:1px;
+	left:-50px
 	
 }
 

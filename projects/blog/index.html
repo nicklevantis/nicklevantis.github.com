@@ -38,7 +38,7 @@
 
 <div id="content_container">
 
-
+<div id="entry_blog">
 	
 <h3>Blog</h3>
 
@@ -119,14 +119,14 @@ _globalObj.writeEntries(tumblr_api_read);
 		<div id="container_navbar">
 	<a href="../../index.html" id="link_home" class="navbar_link">Home</a>
 	<a href="../../about.html" id="link_about" class="navbar_link">About</a>
-	
+	<a href="index.html" id="link_blog" class="navbar_link">Blog</a>
 	<a href="../../projects.html" id="link_projects" class="navbar_link">Projects</a>
 	<a href="../../contact.html" id="link_contact" class="navbar_link">Contact</a>
 
 </div>
 
 
-	
+</div>	
 
 
 
@@ -134,10 +134,24 @@ _globalObj.writeEntries(tumblr_api_read);
 <script type="text/javascript">
 
 
-//Seitenunterstreichung////////////////////////////////////////
-  $("#link_projects").css('border-bottom-width','6px');
-  $("#link_projects").css('border-bottom-style','solid');
-  $("#link_projects").css('border-color','#ccccc');
+
+
+
+
+  $("#link_blog").css('border-bottom-width','6px');
+  $("#link_blog").css('border-bottom-style','solid');
+  $("#link_blog").css('border-color','#cccccc');
+   $("#entry_blog").delay(1000).animate({opacity:'1'}, 800, 'swing');
+    
+
+  function pos(){
+    $("#content_container").css('left',window.innerWidth/2-document.getElementById('content_container').offsetWidth/2);
+  }
+  pos();
+  window.onresize = pos;
+
+</script>
+
 
 
       
