@@ -14,9 +14,9 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%; width:100%;po
 body {
 
   margin: 0px;
-  font-family:arial, sans-serif;
-  font-size: 1em;
-  line-height: 1.4em;
+  font-family: Helvetica,arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 100;
   color:#8c8c8c;
   background-color: #f7f7f7;
