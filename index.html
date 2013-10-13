@@ -33,8 +33,13 @@
 </head>
 
 <body>
+
+
+    
 <div id="content_container">
 <div id="logo_txt"> Nick Levantis</div>
+
+
 <!-- <a href="index.html"><div id="signet"></div></a> -->
 	<h1 id="text_home"><p>
 music  ✚<br />
@@ -43,6 +48,15 @@ music  ✚<br />
 </h1>
 	<div id="spacing"><div>
 </div>
+
+<!--
+<div class="radio">
+			<input id="male" type="radio" name="gender" value="male" onclick="changeBG('#6E7B7C');">
+			<label for="male">Night</label></br>
+			<input id="female" type="radio" name="gender" value="female" onclick="changeBG('#f7f7f7');">
+			<label for="female">Day</label>
+		</div>
+-->
 
 <div id="container_navbar">
 
@@ -55,7 +69,7 @@ music  ✚<br />
 </div>
 
 
-
+	
 
 <script type="text/javascript">
 
@@ -76,9 +90,10 @@ music  ✚<br />
   window.onresize = pos;
 
 </script>
+
 <script type="text/javascript">
         $(function() {
-            var colors = ["#6E7B7C","#666666","#f7f7f7"];
+            var colors = ["#6E7B7C","#666666","#ffffff"];
              
             setInterval(function() { 
                 var bodybgarrayno = Math.floor(Math.random() * colors.length);
@@ -88,6 +103,12 @@ music  ✚<br />
             }, 10000);
         })
     </script>
-    
-  
+
+  <!--
+ <script>
+    function changeBG(color) {        
+        document.body.style.backgroundColor = color;
+    }
+</script>  
+-->
 <!-- Localized -->
