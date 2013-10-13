@@ -566,7 +566,8 @@ opacity: 0;
   	left: 0px;
     top: 0px;
     margin-top: -80px;
-    margin-left: -20px;
+    margin-left: -10px;
+    width: 100%;
   }
   .navbar_link{
     font-size: 15px;
