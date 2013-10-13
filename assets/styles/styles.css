@@ -242,7 +242,7 @@ transform-origin: 0% 0%;
   width: 1030px;
   margin: 0 50% 0 50%;
   left: -570px;
- 
+ s
 }
 .navbar_link{
   text-decoration: none;
@@ -406,9 +406,10 @@ transform-origin: 0% 0%;
 
 
 #entries  {
+position: relative;
    max-width: 800px;
    width:100%;
-	margin:9px auto 0px 50%;
+	margin:9px auto 0px 20%;
 	text-align:left;
 	padding:35px;
 	border-bottom: 1px solid #b2b2b2
