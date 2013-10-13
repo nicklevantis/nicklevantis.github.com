@@ -46,14 +46,14 @@ h1{
   font-weight: 100;
   margin: 0px;
   color:#e3e3e3;
-  font-weight: 600;
+  font-weight: 100;
 }
 
 h3{
   font-family: Arial, Helvetica;
   font-size: 120px;
   line-height: 140px;
-   font-weight: 600;
+   font-weight: 100;
   margin: 0px;
   color:#e3e3e3;
  
@@ -115,7 +115,7 @@ opacity: 0;
    font-size: 55px;
   line-height: 130px;
   color: #b7b7b7;
-  font-weight: 600;
+  font-weight: 100;
   -webkit-transform: rotate(-90deg);
 -moz-transform: rotate(-90deg);
 -ms-transform: rotate(-90deg);
@@ -137,7 +137,7 @@ opacity: 0;
    font-size: 4.60em;
   line-height: 130px;
   color: #b7b7b7;
-  font-weight: 600;
+  font-weight: 100;
   -webkit-transform: rotate(-90deg);
 -moz-transform: rotate(-90deg);
 -ms-transform: rotate(-90deg);
@@ -158,7 +158,7 @@ opacity: 0;
    font-size: 3.70em;
   line-height: 130px;
   color: #b7b7b7;
-  font-weight: 600;
+  font-weight: 100;
   -webkit-transform: rotate(-90deg);
 -moz-transform: rotate(-90deg);
 -ms-transform: rotate(-90deg);
@@ -179,7 +179,7 @@ opacity: 0;
    font-size: 3.26em;
   line-height: 130px;
   color: #b7b7b7;
-  font-weight: 600;
+  font-weight: 100;
   -webkit-transform: rotate(-90deg);
 -moz-transform: rotate(-90deg);
 -ms-transform: rotate(-90deg);
