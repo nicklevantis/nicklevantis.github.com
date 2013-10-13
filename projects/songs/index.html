@@ -37,7 +37,7 @@
 <div id="content_container">
 				<div id="bc1" class="photo_container">
 
-			<div id="b1" class="photo"><img src="../../thumbs/sense.jpg" width="500" height="500" alt="01" /></div>
+			<div id="b1" class="photo"><img src="../../thumbs/Sensoria.jpg" width="500" height="500" alt="01" /></div>
 
 			<a href="../../projects.html">
 				<div id="bbc1" class="photo_description_container">
@@ -99,12 +99,11 @@
 <script type="text/javascript">
 
 
-//Seitenunterstreichung////////////////////////////////////////
-  $("#link_projects").css('border-bottom-width','2px');
+  $("#link_projects").css('border-bottom-width','6px');
   $("#link_projects").css('border-bottom-style','solid');
-  $("#link_projects").css('border-color','#000');
+  $("#link_projects").css('border-color','#cccccc');
 
-//photoer einblenden und Hover-Zustand////////////////////////////////////////
+
     
     $('#bc1').delay(150*1).animate({opacity:'1'}, 800, 'swing');
 
@@ -222,7 +221,18 @@
   }, 100);
 
 </script>
-
+<script type="text/javascript">
+        $(function() {
+            var colors = ["#6E7B7C","#666666","#f7f7f7"];
+             
+            setInterval(function() { 
+                var bodybgarrayno = Math.floor(Math.random() * colors.length);
+                var selectedcolor = colors[bodybgarrayno];
+                $("body").css("background",selectedcolor);
+            
+            }, 6000);
+        })
+    </script>
 
 
 
