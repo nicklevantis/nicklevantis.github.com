@@ -13,7 +13,7 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%; width:100%;po
 
 body {
 
-  margin: 0px;
+  margin: 0;
   font-family: Helvetica,arial, sans-serif;
   font-size: 14px;
   line-height: 19px;
@@ -44,7 +44,7 @@ h1{
   line-height: 140px;
   margin-bottom: -118px;
   font-weight: 100;
-  margin: 0px;
+  margin: 0;
   color:#e3e3e3;
   font-weight: 100;
 }
@@ -54,7 +54,7 @@ h3{
   font-size: 120px;
   line-height: 140px;
    font-weight: 100;
-  margin: 0px;
+  margin: 0;
   color:#e3e3e3;
  
 }
@@ -121,11 +121,11 @@ opacity: 0;
 -ms-transform: rotate(-90deg);
 -o-transform: rotate(-90deg);
 transform: rotate(-90deg);
--webkit-transform-origin: 0% 0%;
--moz-transform-origin: 0% 0%;
--ms-transform-origin: 0% 0%;
--o-transform-origin: 0% 0%;
-transform-origin: 0% 0%;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+transform-origin: 0 0;
 }
 
 
@@ -143,11 +143,11 @@ opacity: 0;
 -ms-transform: rotate(-90deg);
 -o-transform: rotate(-90deg);
 transform: rotate(-90deg);
--webkit-transform-origin: 0% 0%;
--moz-transform-origin: 0% 0%;
--ms-transform-origin: 0% 0%;
--o-transform-origin: 0% 0%;
-transform-origin: 0% 0%;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+transform-origin: 0 0;
 }
 
 #logo3_txt {
@@ -164,11 +164,11 @@ opacity: 0;
 -ms-transform: rotate(-90deg);
 -o-transform: rotate(-90deg);
 transform: rotate(-90deg);
--webkit-transform-origin: 0% 0%;
--moz-transform-origin: 0% 0%;
--ms-transform-origin: 0% 0%;
--o-transform-origin: 0% 0%;
-transform-origin: 0% 0%;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+transform-origin: 0 0;
 }
 
 #logo4_txt {
@@ -185,11 +185,11 @@ opacity: 0;
 -ms-transform: rotate(-90deg);
 -o-transform: rotate(-90deg);
 transform: rotate(-90deg);
--webkit-transform-origin: 0% 0%;
--moz-transform-origin: 0% 0%;
--ms-transform-origin: 0% 0%;
--o-transform-origin: 0% 0%;
-transform-origin: 0% 0%;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+-o-transform-origin: 0 0;
+transform-origin: 0 0;
 }
 
 .project_title{
@@ -293,8 +293,8 @@ transform-origin: 0% 0%;
 
 .section {
 	clear: both;
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 }
 
 /*  GROUPING  ============================================================================= */
@@ -349,7 +349,7 @@ transform-origin: 0% 0%;
 
 
 .tumblr_date {
-	padding: 10px 0px 20px 0px;
+	padding: 10px 0px 20px 0;
 	letter-spacing: 1px;
 	font-size: 14px;
 	font-weight: 700;
@@ -373,11 +373,11 @@ transform-origin: 0% 0%;
 
 .tumblr_photo {
   	max-width: 35%;
-  	margin: 0px auto;
-  	border-bottom: 1px solid #b2b2b2  	
+  	margin: 0 auto;
+  	border-bottom: 1px solid #b2b2b2 ; 	
 }
 
-.tumblr_audio {background-color: none;
+.tumblr_audio {background-color: inherit;
 	color:white;
 	
 }
@@ -507,10 +507,7 @@ font-size: 15px;
     line-height: 110px;
     background-size: 7px 115px;
   }
-  h1{
-    font-size: 100px;
-    line-height: 110px;
-  }
+  
   #text_contact{
     font-size: 18px;
     line-height: 110px;
@@ -610,11 +607,11 @@ opacity: 0;
   #entries  {
    max-width: 800px;
    width:100%;
-	margin:0px auto 0px 20px;
+	margin:0px auto 0 20px;
 	text-align:left;
-	padding:15px;
+	
 }
-
+}
 @media screen and (max-width: 750px) {
 
  #logo3_txt {
@@ -686,7 +683,7 @@ opacity: 0;
 	padding:15px;
 }
 
-
+}
 
 @media screen and (max-width: 560px) {
 
