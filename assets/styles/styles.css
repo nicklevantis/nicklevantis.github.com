@@ -516,7 +516,20 @@ opacity: 0;
 
 @media screen and (max-width: 560px) {
 
-body{background: none;}
+body {
+  margin: 0px;
+  font-family:arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  font-weight: 100;
+  color:#8c8c8c;
+  background-color: #f7f7f7;
+  cursor: default;
+  border: none;
+   overflow: none;
+ }
+ 
+
 
 #logo2_txt {
 opacity: 0;
