@@ -516,7 +516,7 @@ opacity: 0;
 
 @media screen and (max-width: 560px) {
 
-body{border: none;overflow: inherit;}
+body{border: none;overflow: inherit;cursor: default;}
 
 #logo2_txt {
 opacity: 0;
