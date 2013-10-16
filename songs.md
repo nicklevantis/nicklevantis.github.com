@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 permalink: /songs/index.html
 
 title: Songs
