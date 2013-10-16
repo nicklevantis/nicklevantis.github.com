@@ -8,28 +8,19 @@ image:
     feature: nickbio.jpg
 ---
 
-
-
-
->Musician, digital artist & illusionist in a material world..
-
-Born on March 26, 1965, in Athens, Greece, Nick Levantis grew up in a fertile cultural and musical period at the early eighties .
-
-He started his first post punk band called "Prisoners" at the age of fifteen together with his best friend Leo doing their first rehearsals and concerts in the grey industrial zone of Piraeus port.
-
-Their second band "Tarot" was more experimental with influences from different genres : punk, new wave and electronic music.
-
-They played many times live, got good reviews from music critics but their aim was purely to express their inner world presenting unique music ideas without being particularly concerned about some “serious” things in our societies .
-
-At mid eighties Nick's computer programming studies helped him to step deeper into the world of electronic music,and he started composing & experimenting with his trusty Atari and a bunch of synths.
-
-At late eighties and until early nineties  was the singer and guitar player, in a fairly successful alternative underground band at that time in Greece, Sonar Blips (Wipe Out Records).
-
-Their song "Coincidence" with the unique voice of Angela Markopoulos became a radio hit.
-Today Nick is creating pieces of  music trying to surpass the limits of specific genres with the believing that “there is no music evolution in art without the constant presence of internal or social revolution.
-
-Creating music is a continuous process to capture emotions and pictures of  life through sounds, rhythm and melody. "
-The last two years in a limited time has created a total of forty songs that are meant to travel the listener to the magical world of electronic music.
-
-You can find full list of Nick songs on [Soundcloud](https://soundcloud.com/nikoslevantis).  
-
+<p><span>You can listen and download some my songs on </span><a href="http://www.soundcloud.com/nikoslevantis/"> Soundcloud. </a><span>Also you may want to visit my website on </span><a href="http://nicklevantis.jux.com/">Jux</a><span> or my </span><a href="http://levantis.tumblr.com/">Tumblr Blog </a><span> where you can find some of my articles, photos and digital art creation.</span></p>
+<h3 title="Social Links">☁Social Links</h3>
+<ul>
+<li><a href="http://www.twitter.com/nicklevantis" target="_blank">Twitter</a></li>
+<li><a href="http://facebook.com/nicklevantis1" target="_blank">Facebook</a></li>
+<li><a href="http://soundcloud.com/nikoslevantis" target="_blank">Soundcloud</a></li>
+</ul>
+<h3 title="my links">☁Other links</h3>
+<ul>
+<li><a href="http://www.nicklevantis.jux.com/" target="_blank">My other personal site on Jux</a></li>
+<li><a href="http://jumpingfish.gr/nicklevantis" target="_blank">My Jumpingfish page</a></li>
+</ul>
+<h3 title="Mail">☁Mail</h3>
+<ul>
+<li><a href="mailto:nicklevantis@gmail.com">drop me a line</a></li>
+</ul>
