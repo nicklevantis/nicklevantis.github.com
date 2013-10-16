@@ -2,7 +2,7 @@
 layout: post
 permalink: /contact/index.html
 
-title: About
+title: Contact
 
 image:
     feature: nickbio.jpg

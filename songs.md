@@ -2,7 +2,7 @@
 layout: post
 permalink: /songs/index.html
 
-title: About
+title: Songs
 
 image:
     feature: nickbio.jpg

@@ -25,11 +25,9 @@ links:
     url: /about
   - title: Songs
     url: /songs
-     - title: Contact
+   - title: Contact
     url: /contact
-     -title: Github
-    url: https://github.com/nicklevantis
-      external: true
+   
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Greece/Athens
