@@ -3,10 +3,9 @@ layout: post
 permalink: /about/index.html
 
 title: About
-feature: nickbio.jpg
+
 ---
-
-
+feature: feature-image-nickbio.jpg
 
 ![image](http://nicklevantis.com/images/nickbio.jpg)
 
