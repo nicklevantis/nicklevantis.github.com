@@ -11,4 +11,4 @@ Possibly our brain decodes better the details of a black and white photography a
 
 But wait .. The colourless, temporal and mysterious magic emitted from black and white can’t be explained so simply..
 
-Let your imagination take you back to my small photographic journey through the toys (?) of my mature age.
+Let your imagination take you back to my small photographic journey through the toys of my mature age.
