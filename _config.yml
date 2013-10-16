@@ -23,15 +23,13 @@ owner:
 links:
   - title: About
     url: /about
-  -
-    external: true
   - title: Songs
     url: /songs
      - title: Contact
     url: /contact
-     title: Github
+     -title: Github
     url: https://github.com/nicklevantis
- 
+      external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Greece/Athens
