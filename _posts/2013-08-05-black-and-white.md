@@ -5,7 +5,7 @@ description: "The “retro” multiple tones of gray and the bold shadows are so
 category: articles
 tags: [photography, black&white, toys]
 image:
-  feature: retrocar.jpg
+     feature: retrocar.jpg
 ---
 #Black And White Toys
 ##Taking some (amateurish) photos of toys
