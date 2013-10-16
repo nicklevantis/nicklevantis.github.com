@@ -4,8 +4,8 @@ permalink: /about/index.html
 
 title: About
 
-yaml image:feature: nickbio.jpg
-
+image:
+feature: nickbio.jpg
 ---
 
 
