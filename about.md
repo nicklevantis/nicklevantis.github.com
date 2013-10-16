@@ -7,7 +7,8 @@ title: About
 yaml 
 
 image:
-feature: feature-image-nickbio.jpg
+
+feature: nickbio.jpg
 ---
 
 
