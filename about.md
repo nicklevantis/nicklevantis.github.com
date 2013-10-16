@@ -3,12 +3,13 @@ layout: post
 permalink: /about/index.html
 
 title: About
-
+yaml 
+image:
 feature: feature-image-nickbio.jpg
 ---
 
 
-![image](http://nicklevantis.com/images/nickbio.jpg)
+
 
 >Musician, digital artist & illusionist in a material world..
 
