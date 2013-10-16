@@ -5,7 +5,7 @@ permalink: /about/index.html
 title: About
 
 image:
-feature-image: nickbio.jpg
+    feature: nickbio.jpg
 ---
 
 
