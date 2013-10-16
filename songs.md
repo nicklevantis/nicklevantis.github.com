@@ -1,6 +1,6 @@
 ---
 layout: post
-permalink: /about/index.html
+permalink: /songs/index.html
 
 title: About
 
