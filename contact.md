@@ -5,7 +5,7 @@ permalink: /contact/index.html
 title: Contact
 
 image:
-    feature: nickbio.jpg
+    feature: city.jpg
 ---
 
 <p><span>You can listen and download some my songs on </span><a href="http://www.soundcloud.com/nikoslevantis/"> Soundcloud. </a><span>Also you may want to visit my website on </span><a href="http://nicklevantis.jux.com/">Jux</a><span> or my </span><a href="http://levantis.tumblr.com/">Tumblr Blog </a><span> where you can find some of my articles, photos and digital art creation.</span></p>
