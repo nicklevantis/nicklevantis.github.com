@@ -23,13 +23,14 @@ owner:
 links:
   - title: About
     url: /about
-  - title: Github
-    url: https://github.com/nicklevantis
+  -
     external: true
   - title: Songs
     url: /songs
      - title: Contact
     url: /contact
+     title: Github
+    url: https://github.com/nicklevantis
  
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
