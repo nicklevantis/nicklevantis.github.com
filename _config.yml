@@ -26,9 +26,11 @@ links:
   - title: Github
     url: https://github.com/nicklevantis
     external: true
-  - title: Cole Who?
-    url: http://nicklevantis.com
-    external: true
+  - title: Songs
+    url: /songs
+     - title: Contact
+    url: /contact
+ 
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Greece/Athens
