@@ -3,7 +3,7 @@ layout: post
 permalink: /about/index.html
 
 title: About
-
+---
 ![image](http://nicklevantis.com/images.nickbio.jpg)
 
 >Musician, digital artist & illusionist in a material world..
