@@ -764,6 +764,12 @@ bottom: 0px;}
 		
 	}
 	
+	.bl-content>ul li {
+
+width: 70%;
+margin: 1%;
+}
+	
 	.bl-expand .bl-box {
 		height: 130px;
 	}
