@@ -14,7 +14,7 @@ CONTENT */
 _______________________________
 END */
 
-* {  }
+* { font-family:'Courier New', Courier, monospace ;  }
 
 body {
   color: black;
