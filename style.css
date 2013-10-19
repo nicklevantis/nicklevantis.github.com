@@ -150,6 +150,7 @@ th,b,strong,h1,h2,h3,h4,h5,h6,dt {
 
 h2 {font-size: 1.6em;
 	  padding-bottom: 20px;
+	  font-weight: 100;
 }
 
 .title h2 {
