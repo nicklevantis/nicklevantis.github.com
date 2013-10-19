@@ -204,6 +204,14 @@ a:hover {
   margin: 75px 0 175px 0;
 }  
 
+.wallpaper {
+  margin: 15px 0 170px 0;
+ /*
+ border-bottom: 1px solid rgba(0,0,0,0.04);
+  border-top: 1px solid rgba(0,0,0,0.04);
+*/
+}  
+
 p.previous-articles {
   font-size: 125%;
   margin-bottom: 35px;
