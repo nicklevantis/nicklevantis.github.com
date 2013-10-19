@@ -376,6 +376,7 @@ font-size: 15px;
 
 .ascii {font-size:.33em; !important;
 	line-height: 1.3em; !important;
+    font-weight: 100;
 }
 
 
