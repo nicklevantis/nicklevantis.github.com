@@ -20,7 +20,7 @@ body {
   color: black;
   font-size: 12px;
   padding: 0;
-  margin: 20px;
+  margin: 10px;
   max-width: 100%; 
   font: 15px/1.4em 'Courier New', Courier, monospace ; 
 }
@@ -29,7 +29,7 @@ body {
   body, .blog, img, ul, li {
     width: 95% !important;
     height: auto;
-    font-size: 85%;
+    font-size: 95%;
   }
   .pages a {
     margin: 0 0 0 7px !important;
@@ -48,6 +48,12 @@ font-size: 50%;
     bottom: 7px !important;
     right: 5% !important;
   }
+  
+  
+  .content p, .content embed, .content pre, .body-post > div:not(.share-buttons), .body-page > div:not(.share-buttons), .content object, .content iframe  {
+margin-left: 0 ;
+}
+
 }
 
 
@@ -89,7 +95,7 @@ img {
 }
 
 .content p, .content embed, .content pre, .body-post > div:not(.share-buttons), .body-page > div:not(.share-buttons), .content object, .content iframe {
-  margin-left: 27px !important;
+  margin-left: 27px ;
 }
 
 .content pre {
