@@ -148,8 +148,13 @@ th,b,strong,h1,h2,h3,h4,h5,h6,dt {
   padding-left: 27px;
 }
 
+h2 {font-size: 1.6em;
+	  padding-bottom: 20px;
+}
+
 .title h2 {
   margin-top: 0;
+
 }
 
 .date {
@@ -377,6 +382,7 @@ font-size: 15px;
 .ascii {font-size:.28em; !important;
 	line-height: 1.3em; !important;
     font-weight: 100;
+
 }
 
 
