@@ -14,14 +14,15 @@ CONTENT */
 _______________________________
 END */
 
-* { font: 15px/1.4em 'Courier New', Courier, monospace !important; }
+* {  }
 
 body {
   color: black;
   font-size: 12px;
   padding: 0;
   margin: 20px;
-  max-width: 100%;  
+  max-width: 100%; 
+  font: 15px/1.4em 'Courier New', Courier, monospace !important; 
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -37,10 +38,8 @@ body {
     margin: 0 7px 0 0 !important;
   }
   pre, code {
-
-
-
- font-size: .5em; !important;
+ max-width:50%; 
+font-size: 0.5em; 
 }
 
   
@@ -55,7 +54,7 @@ pre, code {
 
 
  max-width:100%; 
- font-size: .5em; !important;
+
 }
 
 .wrapper {
@@ -151,7 +150,7 @@ th,b,strong,h1,h2,h3,h4,h5,h6,dt {
 }
 
 a { 
-  font-weight: 600;
+
   text-decoration: none;
 }
 
