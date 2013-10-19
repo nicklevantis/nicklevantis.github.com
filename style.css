@@ -22,12 +22,12 @@ body {
   padding: 0;
   margin: 20px;
   max-width: 100%; 
-  font: 15px/1.4em 'Courier New', Courier, monospace !important; 
+  font: 15px/1.4em 'Courier New', Courier, monospace ; 
 }
 
 @media only screen and (max-device-width: 480px) {
   body, .blog, img, ul, li {
-    width: 90% !important;
+    width: 95% !important;
     height: auto;
     font-size: 85%;
   }
@@ -37,9 +37,10 @@ body {
   .blog-info h1  {
     margin: 0 7px 0 0 !important;
   }
+  
   pre, code {
  max-width:50%; 
-font-size: 0.5em; 
+font-size: 50%; 
 }
 
   
