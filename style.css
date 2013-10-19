@@ -404,7 +404,7 @@ font-size: 15px;
 .post-detail .sc-play,
 .post-detail .sc-pause{height:5px;width:5px;}
 .sc-play img,
-.sc-pause img{display:block;width:15px;height:15px;}
+.sc-pause img{display:block;width:15px;height:15px;margin: 0;}
 .post-detail .sc-play img,
 .post-detail .sc-pause img{width:5px;height:5px;}
 .sc-play img{margin-left:2px;margin-top: 1px;}
