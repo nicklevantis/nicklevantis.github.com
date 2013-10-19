@@ -372,8 +372,8 @@ font-size: 15px;
   	text-decoration: underline;
 }
 
-.ascii {font-size:.33em;
-	line-height: 1.2em;
+.ascii {font-size:.33em; !important;
+	line-height: 1.2em; !important;
 }
 
 
