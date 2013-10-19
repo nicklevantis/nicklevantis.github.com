@@ -36,6 +36,14 @@ body {
   .blog-info h1  {
     margin: 0 7px 0 0 !important;
   }
+  pre, code {
+
+
+
+ font-size: .5em; !important;
+}
+
+  
   .scriptogram-link {
     bottom: 7px !important;
     right: 5% !important;
@@ -46,7 +54,8 @@ body {
 pre, code {
 
 
- max-width:60%; 
+ max-width:100%; 
+ font-size: .5em; !important;
 }
 
 .wrapper {
