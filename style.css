@@ -64,10 +64,11 @@ pre, code {
 
 }
 
-.wrapper {
+#wrapper {
   max-width: 100%;
   height: auto;
   margin: 10px;
+  opacity: 0;
 }
 
 img {

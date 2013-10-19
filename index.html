@@ -15,8 +15,8 @@
   <meta property="og:url" content="http://scriptogr.am/nicklevantis">
   <meta property="og:site_name" content="Nick Levantis ">
   <link rel="shortcut icon" href="favicon.ico">
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://scriptogr.am/nicklevantis/feed">
   <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="jquery-2.0.3.min.js"></script>
 </head>
 
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<div class="wrapper">
+<div id="wrapper">
   <div class="blog">
       <div id="menu">
         <div class="blog-info">
@@ -76,6 +76,11 @@
     </div><!-- end container -->
   </div><!-- end blog -->
 </div>
+<script type="text/javascript">
+   $('#menu').delay(300).animate({opacity:'1'}, 800, 'swing');
+  $('#wrapper').delay(300).animate({opacity:'1'}, 800, 'swing');
+  
+</script>
 
 </body>
 </html>
