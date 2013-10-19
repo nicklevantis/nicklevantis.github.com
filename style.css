@@ -74,7 +74,7 @@ pre, code {
 
 img {
   display: block;
-  margin: 50px 0;
+  margin: 0 0;
   max-width: 100%;
   height: auto;
 }
@@ -396,14 +396,14 @@ font-size: 15px;
 
 .sc-play, .sc-pause{-webkit-animation:popin .2s linear;}
 .sc-play,
-.sc-pause{float:left;margin-left:-20px;margin-top:0px;color:#fff;height:5px;width:5px;padding:15px;border-radius:30px;}
+.sc-pause{float:left;margin-left:-20px;margin-top:0px;color:rgba(255,255,255,0);height:15px;width:15px;padding:10px;border-radius:30px;}
 .post-detail .sc-play,
 .post-detail .sc-pause{height:5px;width:5px;}
 .sc-play img,
-.sc-pause img{display:block;width:5px;height:5px;}
+.sc-pause img{display:block;width:15px;height:15px;}
 .post-detail .sc-play img,
 .post-detail .sc-pause img{width:5px;height:5px;}
-.sc-play img{margin-left:0;}
+.sc-play img{margin-left:2px;margin-top: 1px;}
 .sc-play{background-color:#000000;}
 .sc-play:hover{background-color:#aaa;}
 .sc-pause{background-color:#000000;}
