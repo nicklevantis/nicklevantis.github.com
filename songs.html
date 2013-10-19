@@ -14,7 +14,7 @@
  <link href="style.css" rel="stylesheet" type="text/css">
   </head>
 <body>
-<div class="wrapper">
+<div id="wrapper">
   <div class="blog">
       <div id="menu">
         <div class="blog-info">
@@ -44,13 +44,18 @@
             <div class="body-post">
               <!--if excerpt-->
               <!--endif-->
-               <p><date>August 26 2013:</date> <strong>Change the world.. </strong> Ambient and industrial influences .. </p>
-          <p></p>
-        <p> <a href="https://soundcloud.com/nikoslevantis/change-the-world" class="sc-player">Change the world</a></p>
-
-              
+            
          
-
+          <div class="player">
+            <div class="songtitle"><strong>Change the world.. </strong> Ambient and industrial influences .. </div>  
+        <p> <a href="http://soundcloud.com/nikoslevantis/change-the-world" class="sc-player">Change the world</a></p>
+          </div>
+           
+         <div class="player">
+         <div class="songtitle"><strong>Sensoria </strong> In no man's land the sky wraps around me...
+and my senses were touching everything around..</div>
+         <p> <a href="http://soundcloud.com/nikoslevantis/sensoria" class="sc-player">Change the world</a></p>
+ </div>
               <!-- if tags -->
               <!-- endif -->
             </div><!--end body-->
@@ -67,7 +72,11 @@
 </div><!-- end wrapper --> 
  <script src="jquery-migrate-1.1.0.min.js"></script>
  <script src="jquery-2.0.3.min.js"></script>
-
+<script type="text/javascript">
+  
+  $('#wrapper').delay(300).animate({opacity:'1'}, 800, 'swing');
+  
+</script>
 <script type="text/javascript" src="soundcloud.player.api.js"></script>
   <script type="text/javascript" src="sc-player.js"></script>
 

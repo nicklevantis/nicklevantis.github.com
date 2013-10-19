@@ -85,10 +85,14 @@ img {
 
 }
 
+.player {max-width: 600px;padding-top:30px;padding-bottom: 30px;border-bottom: 1px dashed black;}
+
 #menu {
   margin-top: 45px;
   margin-left: 27px;
 }
+
+.songtitle {max-width: 600px;padding-bottom: 20px;}
 
 .content hr {
   padding-left: 0 !important;
