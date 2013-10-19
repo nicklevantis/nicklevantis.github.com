@@ -190,7 +190,7 @@ a:hover {
   border-bottom: 1px solid black;
 }
 
-
+.wall {margin-left: 27px;}
 
 .pages {
   margin-top: -20px;
@@ -383,6 +383,7 @@ font-size: 15px;
 	line-height: 1.3em; !important;
     font-weight: 100;
     color: #9a9a9a;
+    
 
 }
 
