@@ -291,7 +291,7 @@
 							t.find("img,iframe").clone().show().appendTo($("#folioImages"));
 							iframeSize();
 							$("#folioImages,#openfolio").append("<div class='clear' />");
-							t.find(".info").contents().clone(".info").appendTo($("#folioInfo"));
+							t.find(".info").contents().clone().appendTo($("#folioInfo"));
 							$("#folioHold,#foliosList").stop().delay(500).slideToggle(500);
 							
 							$("#folioHold").find(".dontadd").hide();
