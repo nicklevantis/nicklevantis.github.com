@@ -39,17 +39,19 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 	{
 		text-decoration: none;
 		width: 1.6em; /* 40 */
-		height: 65%;
+		height: 100%;
 		text-align: left;
 		text-indent: -9999px;
 		cursor: pointer;
 		z-index: 2;
-		top: 2%;
+		top: 0;
 		left: 0.5%;
-		background-color: #111111;
-		-webkit-border-radius: 90px;
+		background-color: rgba(74,74,74,0);
+		/*
+-webkit-border-radius: 90px;
 -moz-border-radius: 90px;
 border-radius: 90px;
+*/
 	}
 		.audioplayer:not(.audioplayer-mini) .audioplayer-playpause
 		{
@@ -64,7 +66,7 @@ border-radius: 90px;
 		.audioplayer-playpause:hover,
 		.audioplayer-playpause:focus
 		{
-			background-color: #222;
+			background-color: rgba(33,33,33,0.07);
 		}
 		.audioplayer-playpause a
 		{
@@ -76,11 +78,11 @@ border-radius: 90px;
 			height: 0;
 			border: 0.5em solid transparent; /* 8 */
 			border-right: none;
-			border-left-color: #fff;
+			border-left-color: #000;
 			content: '';
 			position: absolute;
-			top: 53%;
-			left: 52%;
+			top: 50%;
+			left: 50%;
 			margin: -0.5em 0 0 -0.12em; /* 8 4 */
 		}
 		.audioplayer-playing .audioplayer-playpause a
@@ -111,7 +113,7 @@ border-radius: 90px;
 				right: 0;
 			}
 	.audioplayer-time
-	{
+	{ display:none;
 		width: 4.375em; /* 70 */
 		height: 100%;
 		line-height: 2.375em; /* 38 */
@@ -140,14 +142,14 @@ border-radius: 90px;
 	.audioplayer-bar
 	{cursor: pointer;
 	z-index: 1000;
-		height: 0.475em; /* 14 */
+		height: 0.275em; /* 14 */
 		background-color: rgba(150,150,150,0.15);
 		cursor: pointer;
 		z-index: 1;
 		top: 55%;
-		right: 6.875em; /* 110 */
-		left: 6.875em; /* 110 */
-		margin-top: -0.438em; /* 7 */
+		right: 2.875em; /* 110 */
+		left: 1.675em; /* 110 */
+		margin-top: -0.34em; /* 7 */
 	}
 		.audioplayer-novolume .audioplayer-bar
 		{
@@ -208,8 +210,8 @@ background: -webkit-gradient( linear, left top, right top, from( #007fd1 ), to( 
 				display: block;
 				position: relative;
 				z-index: 1;
-				top: 45%;
-				left: 35%;
+				top: 39%;
+				left: 28%;
 			}
 				.audioplayer-volume-button a:before,
 				.audioplayer-volume-button a:after
