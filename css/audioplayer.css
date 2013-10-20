@@ -5,7 +5,8 @@ max-width: 100%;
 	color: #000;
 	/* text-shadow: 1px 1px 0 #000; */
 	position: relative;
-	
+	cursor: pointer;
+	z-index: 1000;
 	margin-left: 0;
 	margin-right: auto;
 	z-index: 1;
@@ -37,8 +38,8 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 	.audioplayer-playpause
 	{
 		text-decoration: none;
-		width: 2.5em; /* 40 */
-		height: 100%;
+		width: 1.5em; /* 40 */
+		height: 67%;
 		text-align: left;
 		text-indent: -9999px;
 		cursor: pointer;
@@ -46,6 +47,9 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 		top: 2%;
 		left: 0.5%;
 		background-color: #111111;
+		-webkit-border-radius: 90px;
+-moz-border-radius: 90px;
+border-radius: 90px;
 	}
 		.audioplayer:not(.audioplayer-mini) .audioplayer-playpause
 		{
@@ -75,9 +79,9 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 			border-left-color: #fff;
 			content: '';
 			position: absolute;
-			top: 50%;
-			left: 51%;
-			margin: -0.5em 0 0 -0.20em; /* 8 4 */
+			top: 53%;
+			left: 52%;
+			margin: -0.5em 0 0 -0.12em; /* 8 4 */
 		}
 		.audioplayer-playing .audioplayer-playpause a
 		{
@@ -114,6 +118,7 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 		text-align: center;
 		z-index: 2;
 		top: 0;
+		
 	}
 		.audioplayer-time-current
 		{
@@ -124,6 +129,8 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 			border-right: 1px solid #555;
 			border-right-color: rgba( 255, 255, 255, .1 );
 			right: 2.5em; /* 40 */
+			cursor: pointer;
+		z-index: 2;
 		}
 			.audioplayer-novolume .audioplayer-time-duration
 			{
@@ -131,12 +138,13 @@ background: -webkit-gradient( linear, left top, left bottom, from( #444 ), to( #
 				right: 0;
 			}
 	.audioplayer-bar
-	{
-		height: 0.875em; /* 14 */
-		background-color: #222;
+	{cursor: pointer;
+	z-index: 1000;
+		height: 0.475em; /* 14 */
+		background-color: rgba(150,150,150,0.15);
 		cursor: pointer;
 		z-index: 1;
-		top: 50%;
+		top: 55%;
 		right: 6.875em; /* 110 */
 		left: 6.875em; /* 110 */
 		margin-top: -0.438em; /* 7 */
