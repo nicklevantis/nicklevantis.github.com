@@ -17,9 +17,11 @@
   <meta property="og:site_name" content="Nick Levantis ">
   <link rel="shortcut icon" href="favicon.ico">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+ <script src="scripts/jquery-migrate-1.1.0.min.js"></script>
+ <script src="scripts/jquery-2.0.3.min.js"></script>
+
 		<style type="text/css">
-		
 		
 			* { list-style:none;margin:0;padding:0;text-decoration:none; }
 			a { border-bottom:1px solid #eee;color:#000; }
@@ -48,11 +50,11 @@
 			
 			#folioHold { display:none;background:#fff;margin:1% 0 55px;padding:50px 2% 0; }
 			#openfolio { margin:0 auto;max-width:1600px; }
-			#openfolio #folioImages { float:left;margin:50px 0 0;width:68%; }
-			#openfolio #folioImages img, #openfolio #folioImages iframe { float:left;height:auto;margin:0 3% 3% 0;width:47%; }
-			#openfolio #folioImages img.dontadd, #openfolio #folioImages iframe.dontadd { display:none; }
-			#openfolio #folioImages img.whole, #openfolio #folioImages iframe.whole { float:left;margin:0 3% 3% 0;width:97%; }
-			#openfolio #folioImages img.fifty, #openfolio #folioImages iframe { float:right;margin:0 3% 3% 0;width:47%; }
+			#openfolio #folioImages #widget { float:left;margin:50px 0 0;width:68%; }
+			#openfolio #folioImages #widget img, #openfolio #folioImages#widget iframe { float:left;height:auto;margin:0 3% 3% 0;width:47%; }
+			#openfolio #folioImages #widget img.dontadd, #openfolio #folioImages iframe.dontadd { display:none; }
+			#openfolio #folioImages #widget img.whole, #openfolio #folioImages iframe.whole { float:left;margin:0 3% 3% 0;width:97%; }
+			#openfolio #folioImages #widget img.fifty, #openfolio #folioImages #widget iframe { float:right;margin:0 3% 3% 0;width:47%; }
 			#openfolio #folioInfo { float:left;margin:45px 0 50px;text-align:left;width:32%; height:auto; }
 			#openfolio #folioInfo a { border-bottom:1px solid #999; }
 			#openfolio #folioInfo a:hover { border-bottom:1px solid #000; }
@@ -92,64 +94,6 @@
 				#openfolio #folioInfo.fullCol .column { -moz-column-count:1; /* Firefox */-webkit-column-count:1; /* Safari and Chrome */column-count:1; }
 			}
 			
-/* SC PLAYER */
-.player {max-width: 600px;padding-top:30px;padding-bottom: 30px;border-bottom: 1px dashed black;}
-.songtitle {max-width: 600px;padding-bottom: 20px;}
-.sc-play, .sc-pause{-webkit-animation:popin .2s linear;}
-.sc-play,
-.sc-pause{float:left;margin-left:-20px;margin-top:0px;color:rgba(255,255,255,0);height:15px;width:15px;padding:10px;border-radius:1px;}
-.post-detail .sc-play,
-.post-detail .sc-pause{height:5px;width:5px;}
-.sc-play img,
-.sc-pause img{display:block;width:15px;height:15px;margin: 0;}
-.post-detail .sc-play img,
-.post-detail .sc-pause img{width:5px;height:5px;}
-.sc-play img{margin-left:2px;margin-top: 1px;}
-.sc-play{background-color:#000000;}
-.sc-play:hover{background-color:#aaa;}
-.sc-pause{background-color:#000000;}
-.sc-pause:hover{background-color:#858585;}
-.sc-play:active,
-.sc-pause:active{background:rgba(240,240,240,0.67);}
-.sc-pause{display:none;}
-.playing .sc-play{display:none;}
-.playing .sc-pause{display:block;}
-.sc-scrubber{margin-left:24px;position:relative;top:17px;}
-.post-detail .sc-scrubber{margin-left:80px;}
-.sc-time-span{height:2px;-webkit-transition:all .1s linear;background-color:transparent;color:none;}
-.post-detail .sc-time-span{margin:0 0;}
-.playing .sc-time-span{height:32px;margin:0;}
-.post-detail .playing .sc-time-span{height:32px;top:0;}
-.sc-buffer,
-.sc-played{height:2px;position:absolute;top:0;}
-.playing .sc-buffer,
-.playing .sc-played{height:32px; top:-15px; }
-.post-detail .playing .sc-buffer,
-.post-detail .playing .sc-played{height:32px;}
-.sc-title{z-index:2000;position:absolute;top:0;left:0;padding:0 8px 8px 8px;display:none;}
-.sc-title h2{display:inline-block;padding:0;margin:0;line-height:1;}
-.sc-buffer,
-.sc-played{width:2px; }
-.sc-waveform-container{width:100%;height:32px;position:absolute;margin-top:-15px;z-index:1000;-webkit-transition:all .1s linear;background-color: rgba(163,163,163,0);border: none !important;top:0; margin-bottom: 20px;}
-.playing .sc-waveform-container{height:32px;}
-.post-detail .playing .sc-waveform-container{height:2px;}
-.sc-waveform-container img{display:block;height:0px;width:100%;-webkit-filter:contrast(200%);-webkit-transition:all .1s linear;background-color: rgba(127,127,127,0.99);color:rgba(95,95,95,0.98);margin-top: 12px;}
-.playing .sc-waveform-container img{height:32px;margin:0;background-color: rgba(127,127,127,0.52);}
-.post-detail .playing .sc-waveform-container img{height:32px;margin-top:0px;}
-.sc-buffer{background-color:rgba(143,143,143,0.56);height:2px;-webkit-transition:all .1s linear;}
-.playing .sc-buffer{height:32px;}
-.post-detail .playing .sc-buffer{height:32px;}
-.sc-played{background-color:rgba(0,0,0,1);opacity:0.5;height:0px;-webkit-transition:all .1s linear;}
-.playing .sc-played{border-right:1px solid rgba(205,205,205,1);height:32px;margin:0;}
-.post-detail .playing .sc-played{height:32px;}
-.sc-time-indicators{position:absolute;right:20%;top:-5px;z-index:2000;line-height:1;opacity:0.8;-webkit-animation:popin .2s linear;display:none;color: #f5f5f5;}
-.post-detail .sc-time-indicators{top:10px;}
-.playing .sc-time-indicators{display:block;}
-.sc-time-indicators,.sc-position, .sc-duration{color:#dedede;font-size:.9em;}
-.sc-info,
-.sc-artwork-list,
-.sc-trackslist,
-.sc-info-toggle{display:none;}
 
 		</style>
 		
@@ -192,7 +136,7 @@
 <li><a href="http://facebook.com/nicklevantis1" target="_blank">Facebook</a></li>
 <li><a href="http://soundcloud.com/nikoslevantis" target="_blank">Soundcloud</a></li>
 <li><a href="http://www.nicklevantis.jux.com/" target="_blank">My other personal site on Jux</a></li>
-<li><a href="http://jumpingfish.gr/nicklevantis" target="_blank">My Jumpingfish page</a></li>
+
 </ul>
 <p>
 <h3>Mail</h3>
@@ -218,60 +162,29 @@
 			<div id="foliosOverview">
 			
 				<div class="half dark">
-				   
-				
-					<img src="images/DARK.jpg" class="fifty" alt="" />
-					<div class="info">
-					    <div class="player">
-            <div class="songtitle"><strong>Change the world.. </strong> Ambient and industrial influences .. </div>  
-        <p> <a href="http://soundcloud.com/nikoslevantis/change-the-world" class="sc-player">Change the world</a></p>
-          </div>
-           
-           
-         <div class="player">
-         <div class="songtitle"><strong>Sensoria </strong> In no man's land the sky wraps around me...
-and my senses were touching everything around..</div>
-         <p> <a href="http://soundcloud.com/nikoslevantis/sensoria" class="sc-player">Sensoria</a></p>
- </div>
- 
- <div class="player">
-            <div class="songtitle"><strong>Volunteer </strong> Just another volunteer of disaster </div>  
-        <p> <a href="http://soundcloud.com/nikoslevantis/volunteer" class="sc-player">Volunteer</a></p>
-          </div>
-           
-           
-         <div class="player">
-         <div class="songtitle"><strong>Slave </strong> </div>
-         <p> <a href="http://soundcloud.com/nikoslevantis/slave" class="sc-player">Slave</a></p>
- </div>
- 
-  <div class="player">
-            <div class="songtitle"><strong>Fragments </strong> Fragments from my dreams </div>  
-        <p> <a href="http://soundcloud.com/nikoslevantis/fragments" class="sc-player">Fragments</a></p>
-          </div>
-           
-           
-         <div class="player">
-         <div class="songtitle"><strong>Touch the milky way </strong> Some sounds behind the stars. Close your eyes and touch the Milky Way ....</div>
-         <p> <a href="http://soundcloud.com/nikoslevantis/touch-the-milky-way" class="sc-player">Touch the milky way</a></p>
- </div>
+				<img src="images/changetheworld.jpg" width="500" height="500" alt="" class="whole" />
+				   <iframe width="50%" height="166" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/106189679&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>
 
+								
+					<div class="info">
+				
 					 The darkest of my songs...
 										
 					
 											</div>
 					<div class="title">
-						Dark Song
+						Change The World
 					</div>
 				</div>
+				
+				
 				<div class="quarter dark">
-					<img src="images/Globillusion.jpg" width="500" height="500" alt="" class="fifty" />
+					<img src="images/Sensoria.jpg" width="500" height="500" alt="" class="fifty" />
 					<div class="info">
-						<object height="30" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F71150433&amp;color=000000&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F71150433&amp;color=000000&amp;auto_play=false&amp;player_type=tiny"></embed></object>
-						
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/101395292&amp;color=000000&amp;auto_play=false&amp;show_artwork=false"></iframe>						
 						</div>
 					<div class="title">
-						Clobillusion
+						Sensoria
 					</div>
 				</div>
 				<div class="quarter light">
@@ -326,6 +239,8 @@ and my senses were touching everything around..</div>
 		<div id="cursor">open</div>
 		
 		<!-- Script -->
+		
+					
 		<script type="text/javascript">
 		
 			$(document).ready(function(){
@@ -521,9 +436,7 @@ and my senses were touching everything around..</div>
 			
 			
 		</script>
-<script type="text/javascript" src="scripts/soundcloud.player.api.js"></script>
-  <script type="text/javascript" src="scripts/sc-player.js"></script>
-		
+			
 	</body>
 </html>
 <!-- Localized -->
