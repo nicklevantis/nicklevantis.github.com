@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<title>Nick Levantis</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="description" content="Nick Levantis Music, Photography &amp; Artwork exploration">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="ROBOTS" content="INDEX,FOLLOW">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="description" content="Nick Levantis |&nbsp;Music, Photography &amp; Artwork exploration">
+  <meta property="og:url" content="http://nicklevantis.com">
+  <meta property="og:site_name" content="Nick Levantis ">
+  <link rel="shortcut icon" href="favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+
+		<style type="text/css">
+		
+		
+			* { list-style:none;margin:0;padding:0;text-decoration:none; }
+			a { border-bottom:1px solid #eee;color:#000; }
+			a:hover { border-bottom:1px solid #000; }
+			body { background:#fff;color:#000;font-family:'Ubuntu Mono', 'Helvetica Neue', Helvetica, arial;font-size:13pt;line-height:19pt; }
+			.clear { clear:both; }
+			p { margin-bottom:17pt; color: #000;}
+			::selection { background: #eee; }
+			::-moz-selection { background: #eee; }
+			img {max-width:100%;padding-bottom: 10px;}
+			.about { display:none;padding:100px 20%; }
+			.about .column { float:left;margin-right:5%;width:30%; }
+			.about .column.end { margin:0; }
+			
+			#cursor { display:none;position:absolute; }
+			
+			#nav { left:0;margin-top:-48.5pt;position:absolute;right:1em;text-align:center;top:50%;color:#000;  }
+			#nav a#close { border-bottom:0;color:#aaa; }
+			#nav a:hover#close { border-bottom:0;color:#777; }
+			#nav a#title { font-size: 13pt; color:#000; 
+				border:0;font-weight:thin; Line-height:100pt; padding-right: 10px;}
+			#nav a#title b { color:transparent;font-weight:normal; } 
+			#nav a:hover#title { border:0; }
+			#nav a:hover#title b { font-size: 40pt;color:#000; }
+			#nav a.selected { border-bottom:1px solid #000; }
+			
+			#folioHold { display:none;background:#fff;margin:1% 0 55px;padding:50px 2% 0; }
+			#openfolio { margin:0 auto;max-width:1600px; }
+			#openfolio #folioImages { float:left;margin:50px 0 0;width:68%; }
+			#openfolio #folioImages img, #openfolio #folioImages iframe { float:left;height:auto;margin:0 3% 3% 0;width:47%; }
+			#openfolio #folioImages img.dontadd, #openfolio #folioImages iframe.dontadd { display:none; }
+			#openfolio #folioImages img.whole, #openfolio #folioImages iframe.whole { float:left;margin:0 3% 3% 0;width:97%; }
+			#openfolio #folioImages img.fifty, #openfolio #folioImages iframe { float:right;margin:0 3% 3% 0;width:47%; }
+			#openfolio #folioInfo { float:left;margin:45px 0 50px;text-align:left;width:32%; height:auto; }
+			#openfolio #folioInfo a { border-bottom:1px solid #999; }
+			#openfolio #folioInfo a:hover { border-bottom:1px solid #000; }
+			#openfolio #folioInfo.fullCol { margin:0;width:100%; }
+			#openfolio #folioInfo.fullCol .column { margin-bottom:50px;-moz-column-count:3; /* Firefox */-webkit-column-count:3; /* Safari and Chrome */column-count:3; }
+			#openfolio #folioInfo.fullCol .top { margin-bottom:50px;text-align:center; }
+			#openfolio #folioTitle span { border-bottom:1px solid #000; }
+			#openfolio #folioTitle a { border:0;color:#aaa; }
+			#openfolio #folioTitle a:hover { color:#777; }
+			
+			#preload { display:none; }
+			
+			.folio { display:none;height:200px;margin:-1.5% auto 0;max-width:1600px;padding:100px 0 0;text-align:center;background-color: #fff; }
+			.folio .fade { opacity:.1; }
+			.folio .half { float:left;margin:1%;position:relative;width:48%; }
+			.folio .info { display:none;padding:5% 0; }
+			.folio .quarter { float:left;margin:1%;position:relative;width:23%; }
+			.folio .half img, .folio .quarter img { cursor:pointer;height:auto;width:100%; }
+			.folio .half.noscale img, .folio .quarter.noscale img { width:auto; }
+			.folio .half.left { text-align:left; }
+			.folio .half.right { text-align:right; }
+			.folio #foliosList { clear:both;display:none;margin:0 0 50px; }
+			.folio #foliosList span { border-bottom:1px solid #000; }
+			.folio #foliosOverview { margin:0 1%; }
+			.folio .title { cursor:pointer; }
+			
+			@media screen and (max-width:900px){
+				.about .column { float:none;margin:0 0 50px;text-align:center;width:100%; }
+				#openfolio #folioInfo.fullCol .column { -moz-column-count:2; /* Firefox */-webkit-column-count:2; /* Safari and Chrome */column-count:2; }
+			}
+			
+			@media screen and (max-width:650px){
+				.folio .quarter, .folio .half { float:left;margin:1% 0;width:100%; }
+				#openfolio #folioInfo { float:none;margin:0;padding:0 0 5%;text-align:center;width:100%; }
+				#openfolio #folioImages { float:none;margin:50px 0 0;padding-bottom:4%;width:100%; }
+				#openfolio #folioImages img, #openfolio #folioImages img.whole,#openfolio #folioImages img.fifty, #openfolio #folioImages iframe { float:left;height:auto;margin:0 0 3%;width:100%; }
+				#openfolio #folioInfo.fullCol .column { -moz-column-count:1; /* Firefox */-webkit-column-count:1; /* Safari and Chrome */column-count:1; }
+			}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		</head>
+	<body>
+	
+<!--
+		<div id="preload"><img src="images/tinas_motorbike.jpg" alt="" class="dontadd" /><img src="images/toyrobot.jpg" alt="" class="dontadd" /><img src="images/unfaced2.jpg" class="dontadd" alt="" /><img src="images/kid_art.jpg" class="whole" alt="" /><img src="images/nafplio3.jpg" alt="" class="dontadd" /><img src="images/nafpliobw.jpg" alt="" class="dontadd" /><img src="images/Globillusion.jpg" alt="" class="dontadd" /><img src="images/car2.jpg" class="whole" alt="" /><img src="images/car3.jpg" class="whole" alt="" /><img src="images/nafplioroad.jpg" class="dontadd" alt="" /><img src="images/ashtray.jpg" class="dontadd" alt="" /><img src="images/feltwoman.jpg" class="dontadd" alt="" /><img src="images/frankfurt_building1.jpg" class="dontadd" alt="" /><img src="images/frankfurt_train.jpg" class="dontadd" alt="" /><img src="images/DARK.jpg" class="dontadd" alt="" /></div>
+		
+-->
+		<!-- Navigation -->
+		<div id="nav">
+			<a href="index.html" id="title">Nick Levantis</a><a href="javascript:void(0)" class="activate" id="folio">Latest art</a>, <a href="javascript:void(0)" class="activate" id="about">About</a> 
+		</div>
+		
+		<!-- About -->
+		<div class="about">
+			<img src="images/about.jpg" alt="Nick">
+			<div class="column">
+		
+				<p>Born on March 26, 1965, in Athens, Greece, Nick Levantis grew up in a fertile cultural and musical period at the early eighties .</p>
+				<p>He started his first post punk band called "Prisoners" at the age of fifteen together with his best friend Leo doing their first rehearsals and concerts in the grey industrial zone of Piraeus port </p>
+				<p>Their second band "Tarot" was more experimental with influences from different genres : punk, new wave and electronic music.</p>
+				<p>They played many times live, got good reviews from music critics but their aim was purely to express their inner world presenting unique music ideas without being particularly concerned about some &ldquo;serious&rdquo; things in our societies. </p>
+						</div>
+			<div class="column">
+								<p>At mid eightiesNick's computer programming studies helped him to step deeper into the world of electronic music, and he started composing &amp; experimenting with his trusty Atari and a bunch of synths.</p>
+				  <p>At late eighties was the singer and guitar player in a fairly successful alternative underground band at that time in Greece, Sonar Blips (Wipe Out Records).</p>
+				  <p>Today Nick is taking elements from the last three decades and combining them with new interesting electronic music genres.</p> <p>He creates music with no limits and borders with the believing that &ldquo;there is no music evolution in art without the presence of internal or social revolution. &Epsilon;ven fake revolutions are better than zero&rdquo;</p>
+				  
+			</div>
+			<div class="column end">
+						
+									<p>	The last two years has created a total of thirty nine songs that are meant to travel the listener to the magical world of electronic music. You can find full list of Nick songs on <a href="https://soundcloud.com/nikoslevantis/sets/songs" title="Songs" target="_blank">Soundcloud</a> &nbsp;</p>
+										
+<h3>Contact</h3>
+
+<ul>
+<li><a href="http://www.twitter.com/nicklevantis" target="_blank">Twitter</a></li>
+<li><a href="http://facebook.com/nicklevantis1" target="_blank">Facebook</a></li>
+<li><a href="http://soundcloud.com/nikoslevantis" target="_blank">Soundcloud</a></li>
+<li><a href="http://www.nicklevantis.jux.com/" target="_blank">My other personal site on Jux</a></li>
+<li><a href="http://jumpingfish.gr/nicklevantis" target="_blank">My Jumpingfish page</a></li>
+</ul>
+<p>
+<h3>Mail</h3>
+
+<ul>
+<li><a href="mailto:nicklevantis@gmail.com">drop me a line</a></li>
+</ul>
+</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<!-- folios -->
+		<div class="folio">
+		
+			<!-- Open folio -->
+			<div id="folioHold"><div id="openfolio"></div></div>
+			
+			<!-- More folios -->
+			<div id="foliosList"><span>List</span></div>
+			
+			<!-- Overview -->
+			<div id="foliosOverview">
+			
+				<div class="half dark">
+					<img src="images/DARK.jpg" class="fifty" alt="" />
+					<div class="info">
+					 The darkest of my songs...
+					<object height="30" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F35666129&amp;color=000000&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F35666129&amp;color=000000&amp;auto_play=false&amp;player_type=tiny"></embed></object>
+					
+					
+					
+											</div>
+					<div class="title">
+						Dark Song
+					</div>
+				</div>
+				<div class="quarter dark">
+					<img src="images/Globillusion.jpg" width="500" height="500" alt="" class="fifty" />
+					<div class="info">
+						<object height="30" width="100%"><param name="movie" value="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F71150433&amp;color=000000&amp;auto_play=false&amp;player_type=tiny"></param><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed wmode="transparent" allowscriptaccess="always" height="18" width="100%" src="https://player.soundcloud.com/player.swf?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F71150433&amp;color=000000&amp;auto_play=false&amp;player_type=tiny"></embed></object>
+						
+						</div>
+					<div class="title">
+						Clobillusion
+					</div>
+				</div>
+				<div class="quarter light">
+					<img src="images/unperfect_rotation.jpg" alt="" class="whole" />
+					<div class="info">
+						Un perfect rotation Artwork 
+					</div>
+					<div class="title">
+					Un perfect rotation
+					</div>
+				</div>
+				<div class="half dark">
+					<img src="images/tinas_motorbike.jpg" alt="" class="whole" />
+					<img src="images/toyrobot.jpg" alt=""  />
+					<img src="images/unfaced2.jpg" alt="" />
+					<img src="images/kid_art.jpg" alt="" class="whole" />
+					<img src="images/nafplio3.jpg" alt="" class="whole"/>
+					<img src="images/nafpliobw.jpg" alt="" />
+					<img src="images/nafplioroad.jpg" alt="" />
+					<img src="images/car2.jpg" alt="" />
+					<img src="images/car3.jpg" alt="" />
+					<img src="images/ashtray.jpg" alt="" class="whole" />
+					<img src="images/feltwoman.jpg" alt="" />
+					<img src="images/frankfurt_building1.jpg" alt="" />
+					<img src="images/frankfurt_train.jpg" alt="" class="whole" />
+										
+			
+					<div class="info">
+						<p>The retro multiple tones of gray and the bold shadows are some of the reasons why some people falling in love with black and white photos.</p>
+
+<p>Possibly our brain decodes better the details of a black and white photography and supplements differently what is missing.</p> 
+
+<p>But wait .. The colourless, temporal and mysterious magic emitted from black and white can?t be explained so simply..</p>
+
+<p>Let your imagination take you back to my small photographic journey through the toys  of my mature age.</p>
+					</div>
+					<div class="title">
+						<span>Black and white Photography</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="half light">
+					
+			     <div class="info">
+											
+				</div>
+				<div class="title">
+				</div>
+				</div>
+				
+		<!-- Cursor -->
+		<div id="cursor">open</div>
+		
+		<!-- Script -->
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				//hide images gt 0
+				$(".half,.quarter").each(function(){
+					$(this).find("img:gt(0),iframe").hide();
+				});
+				
+				//open folio
+				startPos = 0;
+				$(".half,.quarter").click(function(){
+					$("#cursor").hide();
+					$(".fade").removeClass("fade");
+					$(this).addClass("fade");
+					if($("#openfolio").is(":hidden")){
+						startPos = $(window).scrollTop();
+						t = $(this);
+						$("body").animate({
+							"scrollTop":0
+						},function(){
+							$("#openfolio").html('<div id="folioTitle"></div><div id="folioImages"></div><div id="folioInfo"><div class="clear" /></div>');
+							t.find(".title").contents().clone().appendTo($("#folioTitle"));
+							$("#folioTitle").append("<a href='javascript:void()' id='closefolio'> (Close)</a>");
+							t.find("img,iframe").clone().show().appendTo($("#folioImages"));
+							iframeSize();
+							$("#folioImages,#openfolio").append("<div class='clear' />");
+							t.find(".info").contents().clone().appendTo($("#folioInfo"));
+							$("#folioHold,#foliosList").stop().delay(500).slideToggle(500);
+							
+							$("#folioHold").find(".dontadd").hide();
+							
+							if(t.find(".col").length > 0) $("#folioInfo").addClass("fullCol");
+							
+							$("#closefolio").click(function(){
+								$("#foliosList").slideToggle();
+								$("#folioHold").stop().delay(200).slideToggle(500,function(){
+									//$("body").delay(300).animate({
+									//	"scrollTop":startPos+"px"
+									//});
+								});
+								$(".fade").removeClass("fade");
+							});
+						});
+					}else{
+						t = $(this);
+						$("body").animate({
+							"scrollTop":0
+						},function(){
+							$("#folioHold").delay(100).slideToggle(800,function(){
+								$("#openfolio").contents().remove();
+								$("#openfolio").html('<div id="folioTitle"></div><div id="folioImages"></div><div id="folioInfo"><div class="clear" /></div>');
+								t.find(".title").contents().clone().appendTo($("#folioTitle"));
+								$("#folioTitle").append("<a href='javascript:void()' id='closefolio'> (Close)</a>");
+								t.find("img,iframe").clone().show().appendTo($("#folioImages"));
+								iframeSize();
+								$("#folioImages,#openfolio").append("<div class='clear' />");
+								t.find(".info").contents().clone().appendTo($("#folioInfo"));
+								$("#folioHold").stop().delay(500).slideToggle(800);
+								
+								$("#folioHold").find(".dontadd").hide();
+								
+								if(t.find(".col").length > 0) $("#folioInfo").addClass("fullCol");
+								
+								$("#closefolio").click(function(){
+									$("#foliosList").slideToggle();
+									$("#folioHold").stop().delay(200).slideToggle(500,function(){
+										//$("body").delay(300).animate({
+										//	"scrollTop":startPos+"px"
+										//});
+									});
+									$(".fade").removeClass("fade");
+								});
+							});
+						});
+					}
+				});
+				
+				//cursor
+				$(".half,.quarter").mousemove(function(e){
+					if($(this).hasClass("dark")){
+						$("#cursor").html("<span style='color:#fff'>open</span>");
+						$("#cursor").css("left",e.pageX-($("#cursor").width()/2)+5+"px").css("top",e.pageY+20+"px").show();
+					}else{
+						$("#cursor").html("open folio");
+						$("#cursor").css("left",e.pageX-($("#cursor").width()/2)+5+"px").css("top",e.pageY+20+"px").show();
+					}
+				});
+				$(".half,.quarter").mouseleave(function(){
+					$("#cursor").hide();
+				});
+				
+			});
+			
+			//original menu functions
+			$(".activate").click(function(){
+				if($(".about").is(":visible") && $(this).attr("id") != "about"){
+					t = $(this);
+					$("#close").remove();
+					$(".selected").removeClass("selected");
+					$("body").animate({
+						"scrollTop":0
+					},500,function(){
+						$("#folioHold, #foliosList").hide();
+						$(".fade").removeClass("fade");
+						$(".about").delay(300).fadeOut(function(){
+							t.after("<a href='javascript:void(0)' id='close'> (Close) </a>");
+							$("#close").click(function(){
+								$(".selected").removeClass("selected");
+								$(".folio,.about").fadeOut(function(){
+									$("#folioHold,#foliosList").hide();
+									$(".fade").removeClass("fade");
+									$("#nav").delay(300).animate({
+										"top":"50%"
+									});
+								});
+								$("#close").remove();
+							});
+							id = t.attr("id");
+							t.addClass("selected");
+							$("."+id).delay(300).fadeIn();
+						});
+					});
+				}else if($(".folio").is(":visible") && $(this).attr("id") != "folio"){
+					t = $(this);
+					$("#close").remove();
+					$(".selected").removeClass("selected");
+					$("body").animate({
+						"scrollTop":0
+					},500,function(){
+						$(".folio").delay(300).fadeOut(function(){
+							$("#folioHold, #foliosList").hide();
+							$(".fade").removeClass("fade");
+							t.after("<a href='javascript:void(0)' id='close'> (Close) </a>");
+							$("#close").click(function(){
+								$(".selected").removeClass("selected");
+								$(".folio,.about").fadeOut(function(){
+									$("#folioHold,#foliosList").hide();
+									$(".fade").removeClass("fade");
+									$("#nav").delay(300).animate({
+										"top":"50%"
+									});
+								});
+								$("#close").remove();
+							});
+							id = t.attr("id");
+							t.addClass("selected");
+							$("."+id).delay(300).fadeIn();
+						});
+					});
+				}else{
+					if($("#close").length <= 0){
+						$(this).after("<a href='javascript:void(0)' id='close'> (Close) </a>");
+						$("#close").click(function(){
+							$(".selected").removeClass("selected");
+							$(".folio,.about").fadeOut(function(){
+								$("#folioHold,#foliosList").hide();
+								$(".fade").removeClass("fade");
+								$("#nav").delay(300).animate({
+									"top":"50%"
+								});
+							});
+							$("#close").remove();
+						});
+					}
+					id = $(this).attr("id");
+					$(this).addClass("selected");
+					$("#nav").animate({
+						"top":"45px"
+					},function(){
+						$("."+id).delay(300).fadeIn(function(){
+						});
+					});
+				}
+			});
+			
+			$(window).resize(function(){
+				iframeSize();
+			});
+			
+			function iframeSize(){
+				$("#folioImages").find("iframe").each(function(){
+					w = $(this).attr("width");
+					h = $(this).attr("height");
+					nw = ($(window).width()*.68) - (($(window).width()*.68)*.07);
+					if(nw > 1088) nw = 1088;
+					if($(window).width() < 650) nw = $(window).width() - ($(window).width()*.04);
+					r = nw/w;
+					nh = r*h;
+					$(this).width(nw).height(nh);
+				});
+			}
+			
+			
+			
+		</script>
+		
+	</body>
+</html>
+<!-- Localized -->
