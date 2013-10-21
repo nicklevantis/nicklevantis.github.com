@@ -51,15 +51,17 @@
 			#cursor { display:none;position:absolute; }
 			.logo {position:absolute; z-index:-1;top: -60%;left: 50%;margin-left: -37px;}
 			#nav { left:0;margin-top:-48.5pt;position:absolute;right:1em;text-align:center;top:50%;color:#000;  }
+			#preloader {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,1);z-index:999; }
+			#status {width:200px;height:200px;position:absolute;left:50%;top:40%;background-image:url(images/logolevantis.gif);
+		    background-repeat:no-repeat;background-position:center;margin:-100px 0 0 -100px; /* is width and height divided by two */}
+		    #loadtxt{max-width:100%;text-align:center;margin-top:37%;}
 			#nav a#close { border-bottom:0;color:#aaa; }
 			#nav a:hover#close { border-bottom:0;color:#777; }
-			#nav a#title { font-size: 12pt; color:#000; 
-				border:0;font-weight:thin; Line-height:100pt; padding-right: 10px;}
+			#nav a#title { font-size: 12pt; color:#000;border:0;font-weight:thin; Line-height:100pt; padding-right: 10px;}
 			#nav a#title b { color:transparent;font-weight:normal; } 
 			#nav a:hover#title { border:0; }
 			#nav a:hover#title b { font-size: 40pt;color:#000; }
 			#nav a.selected { border-bottom:1px solid #000; }
-			
 			#folioHold { display:none;background:#fff;margin:1% 0 55px;padding:50px 2% 0; }
 			#openfolio { margin:0 auto;max-width:1600px; }
 			#openfolio #folioImages { float:left;margin:50px 0 0;width:68%; }
@@ -71,14 +73,12 @@
 			#openfolio #folioInfo a { border-bottom:1px solid #999; }
 			#openfolio #folioInfo a:hover { border-bottom:1px solid #000; }
 			#openfolio #folioInfo.fullCol { margin:0;width:100%; }
-			#openfolio #folioInfo.fullCol .column { margin-bottom:50px;-moz-column-count:3; /* Firefox */-webkit-column-count:3; /* Safari and Chrome */column-count:3; }
+			#openfolio #folioInfo.fullCol .column { margin-bottom:50px;-moz-column-count:3; /* Firefox */-webkit-column-count:3;column-count:3; }
 			#openfolio #folioInfo.fullCol .top { margin-bottom:50px;text-align:center; }
 			#openfolio #folioTitle span { border-bottom:1px solid #000; }
 			#openfolio #folioTitle a { border:0;color:#aaa; }
 			#openfolio #folioTitle a:hover { color:#777; }
-			
 			#preload { display:none; }
-			
 			.folio { display:none;height:200px;margin:-1.5% auto 0;max-width:1600px;padding:100px 0 0;text-align:center;background-color: #fff; }
 			.folio .fade { opacity:.1; }
 			.folio .half { float:left;margin:1%;position:relative;width:48%; }
@@ -109,6 +109,17 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		</head>
 	<body>
+
+<div id="preloader">
+ 
+   <div id="status"> 
+ 
+</div>
+   <div id="loadtxt">Loading.... 
+ 
+</div>
+
+</div>
 	
 
 		<div id="preload"><img src="images/logolevantis.gif" class="dontadd" alt=""><img src="images/tinas_motorbike.jpg" alt="" class="dontadd" /><img src="images/toyrobot.jpg" alt="" class="dontadd" /><img src="images/unfaced2.jpg" class="dontadd" alt="" /><img src="images/kid_art.jpg" class="whole" alt="" /><img src="images/nafplio3.jpg" alt="" class="dontadd" /><img src="images/nafpliobw.jpg" alt="" class="dontadd" /><img src="images/Globillusion.jpg" alt="" class="dontadd" /><img src="images/car2.jpg" class="whole" alt="" /><img src="images/car3.jpg" class="whole" alt="" /><img src="images/nafplioroad.jpg" class="dontadd" alt="" /><img src="images/ashtray.jpg" class="dontadd" alt="" /><img src="images/feltwoman.jpg" class="dontadd" alt="" /><img src="images/frankfurt_building1.jpg" class="dontadd" alt="" /><img src="images/frankfurt_train.jpg" class="dontadd" alt="" /><img src="images/changetheworld.jpg" class="dontadd" alt="" /></div>
@@ -473,16 +484,22 @@
 				});
 			}
 			
-		</script>
+				  </script>
 		<script src="scripts/audioplayer.min.js">
                   </script>
-<script>
-                    $( function() {
+                  <script>
+                      $( function() {
                       $( 'audio' ).audioPlayer();
                     }
                      );
                   </script>
-
+<script>
+    $(window).load(function() { // makes sure the whole site is loaded
+	$("#status").fadeOut(); // will first fade out the loading animation
+	$("#loadtxt").fadeOut(); // will first fade out the loading animation
+	$("#preloader").delay(350).slideUp("slow"); // will fade out the white DIV that covers the website.
+     });
+</script>
 	</body>
 </html>
 <!-- Localized -->
