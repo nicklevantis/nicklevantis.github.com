@@ -40,21 +40,14 @@
     			filter: url(resources.svg#desaturate); /* Gecko */
     			filter: gray; /* IE */
     			-webkit-filter: grayscale(1); /* Old WebKit */
-    			-webkit-transition: all 1s ease-in-out;
-		        -moz-transition: all 1s ease-in-out;
-                        -o-transition: all 1s ease-in-out;
-                        transition: all 1s ease-in-out;
+    		
     			}
     			img: hover{ -webkit-filter: none; /* New WebKit */
 			-moz-filter: none;
 			-ms-filter: none;
     			-o-filter: none; /* Not yet supported in Gecko, Opera or IE */ 
-    		
-    			filter: none; /* IE */
-    			-webkit-filter: none; /* Old WebKit */
-    			-webkit-transition: all 1s ease-in-out;
-		        -moz-transition: all 1s ease-in-out;
-                        -o-transition: all 1s ease-in-out;}
+			filter: none; /* IE */
+    		         }
 			.about { display:none;padding:100px 20%; }
 			.about .column { float:left;margin-right:5%;width:30%; }
 			.about .column.end { margin:0; }
