@@ -1,4 +1,4 @@
-
+		
 			$(document).ready(function(){
 				//hide images gt 0
 				$(".half,.quarter").each(function(){
