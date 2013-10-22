@@ -15,96 +15,11 @@
   <meta name="description" content="Nick Levantis |&nbsp;Music, Photography &amp; Artwork exploration">
   <meta property="og:url" content="http://nicklevantis.com">
   <meta property="og:site_name" content="Nick Levantis ">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/audioplayer.css" />
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
-		<style type="text/css">
-			* { list-style:none;margin:0;padding:0;text-decoration:none; }
-			a { border-bottom:1px solid #eee;color:#000; }
-			a:hover { border-bottom:1px solid #000; }
-			body { background:#fff;color:#000;font-family:'Ubuntu Mono', Calibri, 'Helvetica Neue', Helvetica, arial;font-size:12pt;line-height:19pt; }
-			.clear { clear:both; }
-			p { margin-bottom:17pt; color: #000;}
-			::selection { background: #eee; }
-			::-moz-selection { background: #eee; }
-			img {max-width:100%;padding-bottom: 10px;
-			filter: grayscale(70%); /* Current draft standard */
-    			-webkit-filter: grayscale(70%); /* New WebKit */
-			-moz-filter: grayscale(70%);
-			-ms-filter: grayscale(70%); 
-    			-o-filter: grayscale(70%); /* Not yet supported in Gecko, Opera or IE */ 
-    			filter: gray; /* IE */}
-    			img:hover{ -webkit-filter: none; /* New WebKit */
-			-moz-filter: none;
-			-ms-filter: none;
-    			-o-filter: none; /* Not yet supported in Gecko, Opera or IE */ 
-			filter: none; /* IE */}
-			.about { display:none;padding:100px 20%; }
-			.about .column { float:left;margin-right:5%;width:30%; }
-			.about .column.end { margin:0; }
-			.cloud {max-width:500px;}
-			#cursor { display:none;position:absolute; }
-			.logo {position:absolute; z-index:-1;top: -60%;left: 50%;margin-left: -37px;}
-			#nav { left:0;margin-top:-48.5pt;position:absolute;right:1em;text-align:center;top:50%;color:#000;  }
-			#preloader {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,1);z-index:999; }
-			#status {width:200px;height:200px;position:absolute;left:50%;top:40%;background-image:url(images/logolevantis.gif);
-		    background-repeat:no-repeat;background-position:center;margin:-100px 0 0 -100px; /* is width and height divided by two */}
-		    #loadtxt{max-width:100%;text-align:center;margin-top:100%;}
-			#nav a#close { border-bottom:0;color:#aaa; }
-			#nav a:hover#close { border-bottom:0;color:#777; }
-			#nav a#title { font-size: 12pt; color:#000;border:0;font-weight:thin; Line-height:100pt; padding-right: 10px;}
-			#nav a#title b { color:transparent;font-weight:normal; } 
-			#nav a:hover#title { border:0; }
-			#nav a:hover#title b { font-size: 40pt;color:#000; }
-			#nav a.selected { border-bottom:1px solid #000; }
-			#folioHold { display:none;background:#fff;margin:1% 0 55px;padding:50px 2% 0; }
-			#openfolio { margin:0 auto;max-width:1600px; }
-			#openfolio #folioImages { float:left;margin:50px 0 0;width:68%; }
-			#openfolio #folioImages img, #openfolio #folioImages iframe { float:left;height:auto;margin:0 3% 3% 0;width:47%; }
-			#openfolio #folioImages img.dontadd, #openfolio #folioImages iframe.dontadd { display:none; }
-			#openfolio #folioImages img.whole, #openfolio #folioImages iframe.whole { float:left;margin:0 3% 3% 0;width:97%; }
-			#openfolio #folioImages img.fifty, #openfolio #folioImages iframe.fifty { float:right;margin:0 3% 3% 0;width:47%; }
-			#openfolio #folioInfo { float:left;margin:45px 0 50px;text-align:left;width:32%; height:auto; }
-			#openfolio #folioInfo a { border-bottom:1px solid #999; }
-			#openfolio #folioInfo a:hover { border-bottom:1px solid #000; }
-			#openfolio #folioInfo.fullCol { margin:0;width:100%; }
-			#openfolio #folioInfo.fullCol .column { margin-bottom:50px;-moz-column-count:3; /* Firefox */-webkit-column-count:3;column-count:3; }
-			#openfolio #folioInfo.fullCol .top { margin-bottom:50px;text-align:center; }
-			#openfolio #folioTitle span { border-bottom:1px solid #000; }
-			#openfolio #folioTitle a { border:0;color:#aaa; }
-			#openfolio #folioTitle a:hover { color:#777; }
-			#preload { display:none; }
-			.folio { display:none;height:200px;margin:-1.5% auto 0;max-width:1600px;padding:100px 0 0;text-align:center;background-color: #fff; }
-			.folio .fade { opacity:.1; }
-			.folio .half { float:left;margin:1%;position:relative;width:48%; }
-			.folio .info { display:none;padding:5% 0; }
-			.folio .quarter { float:left;margin:1%;position:relative;width:23%; }
-			.folio .half img, .folio .quarter img { cursor:pointer;height:auto;width:100%; }
-			.folio .half.noscale img, .folio .quarter.noscale img { width:auto; }
-			.folio .half.left { text-align:left; }
-			.folio .half.right { text-align:right; }
-			.folio #foliosList { clear:both;display:none;margin:0 0 50px; }
-			.folio #foliosList span { border-bottom:1px solid #000; }
-			.folio #foliosOverview { margin:0 1%; }
-			.folio .title { cursor:pointer; }
-			
-			@media screen and (max-width:900px){
-				.about .column { float:none;margin:0 0 50px;text-align:center;width:100%; }
-				#openfolio #folioInfo.fullCol .column { -moz-column-count:2; /* Firefox */-webkit-column-count:2; /* Safari and Chrome */column-count:2; }
-			}
-			
-			@media screen and (max-width:650px){
-			.about {
-				
-				padding: 100px 5%;
-                  }
-				.folio .quarter, .folio .half { float:left;margin:1% 0;width:100%; }
-				#openfolio #folioInfo { float:none;margin:0;padding:0 0 5%;text-align:center;width:100%; }
-				#openfolio #folioImages { float:none;margin:50px 0 0;padding-bottom:4%;width:100%; }
-				#openfolio #folioImages img, #openfolio #folioImages img.whole,#openfolio #folioImages img.fifty, #openfolio #folioImages iframe { float:left;height:auto;margin:0 0 3%;width:100%; }
-				#openfolio #folioInfo.fullCol .column { -moz-column-count:1; /* Firefox */-webkit-column-count:1; /* Safari and Chrome */column-count:1; }
-			}
-		</style>
+	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		</head>
 	<body>
