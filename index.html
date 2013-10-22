@@ -18,10 +18,7 @@
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/audioplayer.css" />
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,greek-ext' rel='stylesheet' type='text/css'>
-
 		<style type="text/css">
-		
-		
 			* { list-style:none;margin:0;padding:0;text-decoration:none; }
 			a { border-bottom:1px solid #eee;color:#000; }
 			a:hover { border-bottom:1px solid #000; }
@@ -36,14 +33,12 @@
 			-moz-filter: grayscale(70%);
 			-ms-filter: grayscale(70%); 
     			-o-filter: grayscale(70%); /* Not yet supported in Gecko, Opera or IE */ 
-    			filter: gray; /* IE */
-    			                         }
+    			filter: gray; /* IE */}
     			img:hover{ -webkit-filter: none; /* New WebKit */
 			-moz-filter: none;
 			-ms-filter: none;
     			-o-filter: none; /* Not yet supported in Gecko, Opera or IE */ 
-			filter: none; /* IE */
-    		         }
+			filter: none; /* IE */}
 			.about { display:none;padding:100px 20%; }
 			.about .column { float:left;margin-right:5%;width:30%; }
 			.about .column.end { margin:0; }
@@ -121,12 +116,8 @@
  
 </div>
 </div>
-   
-
 </div>
-	
-
-		<div id="preload"><img src="images/tinas_motorbike.jpg" alt="" class="dontadd" /><img src="images/toyrobot.jpg" alt="" class="dontadd" /><img src="images/unfaced2.jpg" class="dontadd" alt="" /><img src="images/kid_art.jpg" class="whole" alt="" /><img src="images/nafplio3.jpg" alt="" class="dontadd" /><img src="images/nafpliobw.jpg" alt="" class="dontadd" /><img src="images/Globillusion.jpg" alt="" class="dontadd" /><img src="images/car2.jpg" class="whole" alt="" /><img src="images/car3.jpg" class="whole" alt="" /><img src="images/nafplioroad.jpg" class="dontadd" alt="" /><img src="images/ashtray.jpg" class="dontadd" alt="" /><img src="images/feltwoman.jpg" class="dontadd" alt="" /><img src="images/frankfurt_building1.jpg" class="dontadd" alt="" /><img src="images/frankfurt_train.jpg" class="dontadd" alt="" /><img src="images/album_monotones.jpg" class="dontadd" alt="" /></div>
+<div id="preload"><img src="images/tinas_motorbike.jpg" alt="" class="dontadd" /><img src="images/toyrobot.jpg" alt="" class="dontadd" /><img src="images/unfaced2.jpg" class="dontadd" alt="" /><img src="images/kid_art.jpg" class="whole" alt="" /><img src="images/nafplio3.jpg" alt="" class="dontadd" /><img src="images/nafpliobw.jpg" alt="" class="dontadd" /><img src="images/Globillusion.jpg" alt="" class="dontadd" /><img src="images/car2.jpg" class="whole" alt="" /><img src="images/car3.jpg" class="whole" alt="" /><img src="images/nafplioroad.jpg" class="dontadd" alt="" /><img src="images/ashtray.jpg" class="dontadd" alt="" /><img src="images/feltwoman.jpg" class="dontadd" alt="" /><img src="images/frankfurt_building1.jpg" class="dontadd" alt="" /><img src="images/frankfurt_train.jpg" class="dontadd" alt="" /><img src="images/album_monotones.jpg" class="dontadd" alt="" /></div>
 			
 
 		<!-- Navigation -->
@@ -474,7 +465,6 @@
 			$(window).resize(function(){
 				iframeSize();
 			});
-			
 			function iframeSize(){
 				$("#folioImages").find("iframe").each(function(){
 					w = $(this).attr("width");
@@ -487,8 +477,8 @@
 					$(this).width(nw).height(nh);
 				});
 			}
-			
 				  </script>
+				  	<!-- HTML5 AUDIO PLAYER -->
 		<script src="scripts/audioplayer.min.js">
                   </script>
                   <script>
@@ -497,6 +487,7 @@
                     }
                      );
                   </script>
+                  	<!-- PRELOADER -->
 <script>
     $(window).load(function() { // makes sure the whole site is loaded
 	$("#status").fadeOut(); // will first fade out the loading animation
@@ -504,7 +495,7 @@
 	$("#preloader").delay(350).fadeOut("slow"); // will fade out the white DIV that covers the website.
      });
 </script>
-
+	<!-- GOOGLE ANALYTICS -->
               </script>
 <script type="text/javascript">
                     var _gaq = _gaq || [];
