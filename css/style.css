@@ -24,6 +24,7 @@
 			.blog  { display:none;padding:100px 20%; }
 			.cloud {max-width:500px;}
 			#cursor { display:none;position:absolute; }
+			.slash{font-size: .9em color:#666;font-weight:100;}
 			.logo {position:absolute; z-index:-1;top: -60%;left: 50%;margin-left: -37px;}
 			#nav { left:0;margin-top:-48.5pt;position:absolute;right:1em;text-align:center;top:50%;color:#000;  }
 			#preloader {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,1);z-index:999; }
@@ -33,7 +34,7 @@
 		    #logotxt{max-width:100%;text-align:center;margin-top: -20px;}
 			#nav a#close { border-bottom:0;color:#aaa; }
 			#nav a:hover#close { border-bottom:0;color:#777; }
-			#nav a#title { font-size: 12pt; color:#000;border:0;font-weight:thin; Line-height:100pt; padding-right: 10px;}
+			#nav a#title { font-size: 12pt; color:#000;border:0;font-weight:thin; Line-height:100pt; padding-right: 0;}
 			#nav a#title b { color:transparent;font-weight:normal; } 
 			#nav a:hover#title { border:0; }
 			#nav a:hover#title b { font-size: 40pt;color:#000; }
