@@ -1,5 +1,4 @@
-		
-			$(document).ready(function(){
+		$(document).ready(function(){
 				//hide images gt 0
 				$(".half,.quarter").each(function(){
 					$(this).find("img:gt(0),iframe").hide();
