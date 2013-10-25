@@ -21,14 +21,16 @@
 			.about { display:none;padding:100px 20%; }
 			.about .column { float:left;margin-right:5%;width:30%; }
 			.about .column.end { margin:0; }
+			.blog  { display:none;padding:100px 20%; }
 			.cloud {max-width:500px;}
 			#cursor { display:none;position:absolute; }
 			.logo {position:absolute; z-index:-1;top: -60%;left: 50%;margin-left: -37px;}
 			#nav { left:0;margin-top:-48.5pt;position:absolute;right:1em;text-align:center;top:50%;color:#000;  }
 			#preloader {position:absolute;top:0;left:0;right:0;bottom:0;background-color:rgba(255,255,255,1);z-index:999; }
-			#status {width:150px;height:219px;position:absolute;left:50%;top:40%;background-image:url(../images/logoload.gif);
+			#status {width:200px;height:219px;position:absolute;left:50%;top:40%;background-image:url(../images/logoload.gif);
 		    background-repeat:no-repeat;background-position:center;margin:-100px 0 0 -100px; /* is width and height divided by two */}
 		    #loadtxt{max-width:100%;text-align:center;margin-top:100%;}
+		    #logotxt{max-width:100%;text-align:center;margin-top: -20px;}
 			#nav a#close { border-bottom:0;color:#aaa; }
 			#nav a:hover#close { border-bottom:0;color:#777; }
 			#nav a#title { font-size: 12pt; color:#000;border:0;font-weight:thin; Line-height:100pt; padding-right: 10px;}
@@ -67,6 +69,28 @@
 			.folio #foliosOverview { margin:0 1%; }
 			.folio .title { cursor:pointer; }
 			
+			.tumblr_title {letter-spacing: 1px;font-size: 1em;line-height: 1.6em;font-weight: bold;text-decoration:underline;text-align: center;}
+			.tumblr_date {padding: 10px 0px 20px 0;letter-spacing: 1px;font-size: 14px;font-weight: 700;color:#dddddd;text-align: center;}
+			.tumblr_link {font-size: 1em;}
+			.tumblr_body {font-size: 1em;}
+			.tumblr_quote {margin: 30px;font-size: 1.2em;font-style: italic;max-width: 80%}
+			.tumblr_photo {max-width: 35%;margin: 0 auto;border-bottom: 1px solid #b2b2b2;}
+			.tumblr_audio {background-color: inherit;color:white;margin: 0 auto;}
+			#audio_player{color:white  !important; }
+			#audio_player_overlay {color:white; background-color: white;}
+			.post.audio .album-art {width: 100%;height: 100%;border-radius: 2px;overflow: hidden;border-bottom: 1px solid #b2b2b2;}
+			.post.audio .album-art img {width: 100%;height: 100%;}
+			.post.audio .audio-embed {display: none;width: 100%;height: 100%;}
+			.single-post .post.audio .album-art {display: none;}
+			.post.audio .audio-embed .tumblr_audio_player {width: 320px;height: 320px;}
+			.single-post .post.audio .audio-embed {display: block;}
+			#entries  {position: relative;max-width: 500px;margin:9px auto;text-align:left;padding:35px;border-bottom: 1px solid #b2b2b2;}
+			#entries a {text-decoration: none;color: #737373;}
+			#entries p { text-decoration: none;font-weight: 100;max-width: 100%;}
+			#entries img {text-align: center;max-width: 100%;}
+			#entries caption {text-align: center;max-width: 60%;}
+			#entries a:hover {text-decoration: underline;}
+			iframe{max-width:100%;max-height:100%}
 			@media screen and (max-width:900px){
 				.about .column { float:none;margin:0 0 50px;text-align:center;width:100%; }
 				#openfolio #folioInfo.fullCol .column { -moz-column-count:2; /* Firefox */-webkit-column-count:2; /* Safari and Chrome */column-count:2; }
@@ -76,7 +100,15 @@
 			.about {
 				
 				padding: 100px 5%;
+			
                   }
+            .blog {
+				
+				padding: 100px 0;
+			
+                  }
+      
+                  
 				.folio .quarter, .folio .half { float:left;margin:1% 0;width:100%; }
 				#openfolio #folioInfo { float:none;margin:0;padding:0 0 5%;text-align:center;width:100%; }
 				#openfolio #folioImages { float:none;margin:50px 0 0;padding-bottom:4%;width:100%; }
