@@ -69,7 +69,7 @@
 			.folio #foliosList span { border-bottom:1px solid #000; }
 			.folio #foliosOverview { margin:0 1%; }
 			.folio .title { cursor:pointer; }
-			
+			.folio .audio { float:left;margin:1%;position:relative;width:23%; }
 			.tumblr_title {letter-spacing: 1px;font-size: 1em;line-height: 1.6em;font-weight: bold;text-decoration:underline;text-align: center;}
 			.tumblr_date {padding: 10px 0px 20px 0;letter-spacing: 1px;font-size: 14px;font-weight: 700;color:#dddddd;text-align: center;}
 			.tumblr_link {font-size: 1em;}
