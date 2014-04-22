@@ -532,9 +532,9 @@ p.main-text:nth-child(3) {
 
 .cross a {
 	padding: 0 -5px;
-	color: rgba(240,97,97,0.33);
+	color: rgba(240,97,97,0.23);
 	font-size: .6em;
-	font-weight: 400;
+	font-weight: 300;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
