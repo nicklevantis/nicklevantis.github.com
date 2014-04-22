@@ -531,10 +531,10 @@ p.main-text:nth-child(3) {
 }
 
 .cross a {
-	padding: 0 5px;
-	color: rgba(255,255,255,0.24);
+	padding: 0 -5px;
+	color: rgba(240,97,97,0.33);
 	font-size: .6em;
-	font-weight: 200;
+	font-weight: 400;
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
 	transition: color 0.3s;
@@ -547,7 +547,7 @@ p.main-text:nth-child(3) {
 	left: 0;
 	top: 50%;
 	height: 2px;
-	margin-top: 4.3px;
+	margin-top: 6.3px;
 	background: #F06060;
 	content: '';
 	z-index: -1;
