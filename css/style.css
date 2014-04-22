@@ -108,7 +108,12 @@
 				padding: 100px 0;
 			
                   }
-      
+      .folio .audio {
+float: left;
+margin: 1%;
+position: relative;
+width: 100%;
+}
                   
 				.folio .quarter, .folio .half { float:left;margin:1% 0;width:100%; }
 				#openfolio #folioInfo { float:none;margin:0;padding:0 0 5%;text-align:center;width:100%; }
