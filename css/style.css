@@ -217,13 +217,13 @@ section {
 .grid figure,
 .grid .placeholder {
 	width: 320px;
-	height: 320px;
+	height: 319px;
 }
 
 .grid figure {
 
 
-	margin: -2px;
+	margin: -3.5px;
 	display: inline-block;
 	cursor: pointer;
 	-webkit-touch-callout: none;
