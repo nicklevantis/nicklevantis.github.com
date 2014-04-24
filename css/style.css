@@ -532,7 +532,7 @@ p.main-text:nth-child(3) {
 
 .cross a {
 	padding: 0 -5px;
-	color: rgba(240,97,97,0.23);
+	color: rgba(240,97,97,0.13);
 	font-size: .6em;
 	font-weight: 300;
 	-webkit-transition: color 0.3s;
@@ -548,7 +548,7 @@ p.main-text:nth-child(3) {
 	top: 50%;
 	height: 2px;
 	margin-top: 6.3px;
-	background: #F06060;
+	background: rgba(240,97,97,0.81);
 	content: '';
 	z-index: -1;
 	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
@@ -561,18 +561,29 @@ p.main-text:nth-child(3) {
 	-webkit-transform: translateY(-20px);
 	-moz-transform: translateY(-20px);
 	transform: translateY(-20px);
+	
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+	
+
 }
 
 .cross a::after {
 	-webkit-transform: translateY(20px);
 	-moz-transform: translateY(20px);
 	transform: translateY(20px);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
 	
 }
 
 .cross a:hover,
 .cross a:focus {
-	color: rgba(255,255,255,0.14);
+	color: rgba(255,255,255,0.64);
 }
 
 .cross a:hover::before,
