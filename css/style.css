@@ -618,7 +618,7 @@ p.main-text:nth-child(3) {
 
 @media screen and (max-width: 25em) {
 #footer { display: none;}
-	.grid figure, .grid .placeholder {
+	.grid figure{
 width: 150px;
 height: 150px;
 }
