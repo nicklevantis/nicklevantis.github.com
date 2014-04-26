@@ -618,8 +618,9 @@ p.main-text:nth-child(3) {
 
 @media screen and (max-width: 25em) {
 #footer { display: none;}
-	.codrops-icon span {
-		display: none;
-	}
+	.grid figure, .grid .placeholder {
+width: 150px;
+height: 150px;
+}
 
 }
