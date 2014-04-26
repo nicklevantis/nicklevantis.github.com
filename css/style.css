@@ -1,26 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-@font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'codropsicons';
-	src:url('../fonts/codropsicons/codropsicons.eot');
-	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
-		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
-		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
-}
-
-
-@font-face {
-	font-family: 'fontawesome';
-	src:url('../fonts/fontawesome/fontawesome.eot?-v92fkb');
-	src:url('../fonts/fontawesome/fontawesome.eot?#iefix-v92fkb') format('embedded-opentype'),
-		url('../fonts/fontawesome/fontawesome.woff?-v92fkb') format('woff'),
-		url('../fonts/fontawesome/fontawesome.ttf?-v92fkb') format('truetype'),
-		url('../fonts/fontawesome/fontawesome.svg?-v92fkb#fontawesome') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .clearfix:before, .clearfix:after { content: ''; display: table; }
@@ -59,6 +37,14 @@ span.text-span { background: rgba(0,0,0,0.5);
   -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
   transition: opacity 500ms; }
+  
+  
+h2 { color: white;font-family: "Lato", Arial ;font-weight: 300;text-align: left;max-width: 600px;
+	width: 90%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+margin: 0 auto;}
 
 #bt, #br, #bb, #bl {
 position: fixed;
@@ -134,6 +120,8 @@ h1 {
 font-weight: 300;
 font-size: 2.6em;
 color: #ffffff;
+
+
 }
 
 /* To Navigation Style */
@@ -427,6 +415,8 @@ font-weight: 200;
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: opacity 0.5s, transform 0.5s;
 }
+
+
 
 
 .album-img {max-width: 320px; width: 100%; margin: 0 auto;-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
