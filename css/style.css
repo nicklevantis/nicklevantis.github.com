@@ -623,4 +623,39 @@ width: 150px;
 height: 150px;
 }
 
+/* Simple fallback */
+/* if any of these are not supported, a simple fallback will be shown */
+.no-pointerevents .content,
+.no-csstransforms3d .content,
+.no-csstransitions .content,
+.no-pointerevents .content > div,
+.no-csstransforms3d .content > div,
+.no-csstransitions .content > div,
+.no-pointerevents .close-content,
+.no-csstransforms3d .close-content,
+.no-csstransitions .close-content {
+	opacity: 1;
+	visibility: visible;
+	display: none;
+	height: auto;
+}
+
+.no-pointerevents .show .close-content,
+.no-csstransforms3d .show .close-content,
+.no-csstransition .show .close-content,
+.no-pointerevents div.show,
+.no-csstransforms3d div.show,
+.no-csstransitions div.show,
+.no-csstransitions .main-img,
+.no-csstransitions .main-text,
+.no-csstransforms3d .main-img,
+.no-csstransforms3d .main-text, 
+.no-pointerevents .main-img,
+.no-pointerevents .main-text {
+	display: block !important;
+	opacity: 1;
+}
+
+
+
 }
