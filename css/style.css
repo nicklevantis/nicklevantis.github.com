@@ -43,6 +43,8 @@ filter: url(desaturate.svg#greyscale); */
 }
 
 
+img {max-width:100%}
+
 span.text-span { background: rgba(0,0,0,0.5);
   color: white;
   cursor: pointer;
@@ -423,6 +425,11 @@ font-weight: 200;
 	width: 90%;
 	opacity: 1;
 	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+}
+
+
+.album-img {max-width: 320px; width: 100%; margin: 0 auto;-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
 	transition: opacity 0.5s, transform 0.5s;
 }
 

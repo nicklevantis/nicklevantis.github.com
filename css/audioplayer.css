@@ -5,22 +5,22 @@
 	color: #e8e8e8;
 	text-align: left;
 	border-top: 1px solid rgba(255,128,128,0.39);
-	max-width: 50%;
+	max-width: 320px;
 	margin: 0 auto;
 	}
 
 .audioplayer
 {
-max-width: 50%;
+max-width: 320px;
 	height: 2.5em; /* 40 */
 	color: #000;
 	/* text-shadow: 1px 1px 0 #000; */
 	position: relative;
 	cursor: pointer;
 	z-index: 1000;
-	margin: 0 auto;
+	margin: -66px auto;
 	z-index: 1;
-	background: #FF5C5C;
+	background: rgba(180, 180, 180, 0.36);
 	margin-bottom: 66px;
 	
 
