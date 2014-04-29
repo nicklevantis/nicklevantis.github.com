@@ -486,6 +486,28 @@ p.main-text:nth-child(3) {
 	padding-bottom: 100px;
 }
 
+.main-textbold {
+max-width: 600px;
+	width: 90%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+
+	text-align: left;
+	margin: 0 auto;
+	padding: 10px 0;
+	color: #ffffff;
+
+	font-size: .70em;
+	font-weight: 400;
+	font-family:  "Lato",Arial, serif;
+}
+
+.main-text:last-child {
+	padding-bottom: 100px;
+}
+
+
 /* Simple fallback */
 /* if any of these are not supported, a simple fallback will be shown */
 .no-pointerevents .content,
