@@ -226,6 +226,8 @@ section {
 	
 }
 
+iframe { max-width: 320px;   padding: 10px;}
+
 
 .grid figure :hover{
 -webkit-filter: hue-rotate(40deg) brightness(210%);;
@@ -408,7 +410,7 @@ font-weight: 200;
 /* main content */
 
 .main-img,
-.main-text {
+.main-text  {
 	max-width: 600px;
 	width: 90%;
 	opacity: 1;
@@ -416,6 +418,15 @@ font-weight: 200;
 	transition: opacity 0.5s, transform 0.5s;
 }
 
+.main-songs {max-width: 700px;
+	
+	opacity: 1;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+	margin: 0 auto;
+	
+	}
+	
 
 
 
@@ -633,6 +644,14 @@ max-width: 600px;
 
 
 @media screen and (max-width: 1000px) {
+
+.grid { margin: 0 auto;}
+.grid figure{
+
+
+max-width: 280px;
+max-height: 280px;}
+
 
 	}
 
