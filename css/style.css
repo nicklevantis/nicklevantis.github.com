@@ -555,7 +555,7 @@ font-family: 'Lato', arial;
 
 
 nav{
-    margin:30px 0px 0px 0px;
+    margin:30px auto;
     text-align:center;
 }
 
@@ -633,7 +633,7 @@ nav a:hover{
 .grid figure {
 width: 320px;
 height:320px;
-margin: -2.2px -2px;
+margin: -2.5px -3px;
 	
 	position: relative;
 	
@@ -675,10 +675,10 @@ padding: 30px 0px 0px 0px;
 	
 
  transform:scale(.7);
-    -ms-transform:scale(.95); /* IE 9 */
-    -moz-transform:scale(.95); /* Firefox */
-    -webkit-transform:scale(.95); /* Safari and Chrome */
-    -o-transform:scale(.95); /* Opera */
+    -ms-transform:scale(.80); /* IE 9 */
+    -moz-transform:scale(.80); /* Firefox */
+    -webkit-transform:scale(.80); /* Safari and Chrome */
+    -o-transform:scale(.80); /* Opera */
     
 		
 	
@@ -1683,15 +1683,11 @@ only screen and (max-device-width : 1117px){
 
 
 nav{
-    margin:50px 15px 0px 0px;
+    margin:50px auto;
 }
 
 
-#weather {
-	
-	left:-10px;
 
-}
 
 }
 
