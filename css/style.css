@@ -1540,7 +1540,108 @@ color:#f54e56;
 		bottom: 20px;
 	}
 
+
+
+
+/* Effect: cross */
+.cross {
+	position: absolute;
+	z-index: 100;
+	top:30px;
+	width: 13%;
+	right: 60px;
+}
+
+.cross a {
+position: absolute;
+	padding: 30px;
+	color: rgba(197,197,197,0.13);
+	font-size: .6em;
+	font-weight: 300;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.cross a::before,
+.cross a::after {
+	position: absolute;
+	width: 60px;
+	left: 20px;
+	height: 2px;
+	top:36px;
+	background: rgba(240,97,97,0.81);
+	content: '';
+	z-index: -1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.cross a::before {
+	-webkit-transform: translateY(-20px);
+	-moz-transform: translateY(-20px);
+	transform: translateY(-20px);
+	
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+
+	
+
+}
+
+.cross a::after {
+	-webkit-transform: translateY(20px);
+	-moz-transform: translateY(20px);
+	transform: translateY(20px);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+	
+}
+
+.cross a:hover,
+.cross a:focus {
+	color: rgba(255,255,255,0.64);
+}
+
+.cross a:hover::before,
+.cross a:hover::after,
+.cross a:focus::before,
+.cross a:focus::after {
+	opacity: 0.7;
+}
+
+.cross a:hover::before,
+.cross a:focus::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.cross a:hover::after,
+.cross a:focus::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
 /****************************************************************************** IMPRINT *********************************************************************/
+
+
+
+
+
+
 
 
 .imprint_wrapper {
@@ -2201,6 +2302,7 @@ position: relative;
 }
  
  }
+
 
 
 
