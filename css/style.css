@@ -555,7 +555,7 @@ font-family: 'Lato', arial;
 
 
 nav{
-    margin:30px auto;
+    margin:30px auto 0;
     text-align:center;
 }
 
@@ -1214,8 +1214,9 @@ color: rgba(81,81,81,0.4);
 #copyright_wrapper2 {
 
 	max-width: 100%;
-   padding-top: 2%;
+   padding-top: -2%;
 	padding-bottom: 2%;
+ 
 }
 
 #copyright_wrapper2 p{
@@ -1784,7 +1785,7 @@ only screen and (max-device-width : 1117px){
 
 
 nav{
-    margin:50px auto;
+    margin:50px auto 0;
 }
 
 
