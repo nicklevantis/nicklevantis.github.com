@@ -1244,7 +1244,7 @@ color: rgba(81,81,81,0.4);
 
 
 .title {
-	border-top: 1px solid rgba(81,81,81,0.2);
+
 	padding-top: 60px;
 	text-align: center;
 	margin: 100px auto 75px auto;
@@ -1806,7 +1806,7 @@ only screen and (max-device-width : 880px){
 }
 
 .copyright_iphone{
-	border-top :1px solid rgba(81,81,81,1);
+	
 	padding-top: 10px;
 	text-align: center;
 	margin: 70px auto 30px auto;
