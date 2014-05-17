@@ -1101,7 +1101,11 @@ color: rgba(81,81,81,0.4);
 	-moz-transition: all .3s ease-in-out;
 	-ms-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
+	font-size: 12px;
+	text-align: centers
 }
+
+.fb {color:#0027ff}
 
 
 #copyright_wrapper2 a:hover{
@@ -1697,8 +1701,8 @@ nav a{
 
 
 #name  p {
-font-size: 1em;
-	margin-top: -14px;
+font-size: .3em;
+	margin-top: 10px;
 	
 }
 
