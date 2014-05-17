@@ -341,13 +341,15 @@ margin-bottom: 30px;
 
 
 
-.main {
-    display: -moz-inline-box;
-    display: inline-block;
-    vertical-align: top;
-    max-width:	600px;
-	margin: 10px auto 10px 10px ;
+
+    .main {
+display: -moz-inline-box;
+display: inline-block;
+vertical-align: top;
+max-width: 600px;
+margin: 10px auto;
 }
+
 
 
 .main p {
