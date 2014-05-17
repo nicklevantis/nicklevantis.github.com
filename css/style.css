@@ -823,7 +823,7 @@ figcaption {
 
 
 #copyright_wrapper p{
-	border-top :1px solid rgba(81,81,81,0.4);
+
 	padding-top: 10px;
 	text-align: right;
 	color: rgba(81,81,81,0.4);
@@ -2286,7 +2286,7 @@ only screen and (max-device-width : 320px){
 
 .grid {
 	padding: 130px 0px 0px 0px;
-	max-width: 300px;
+	width: 320px;
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
