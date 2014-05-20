@@ -111,6 +111,16 @@ h3 {text-align: left;
 */
 		
 		
+.wrap{
+	max-width: 600px;
+	margin:150px auto;
+}
+
+.type-wrap{
+	margin:10px auto;
+	padding:0px;
+	
+}
 		
 		
 
@@ -274,7 +284,7 @@ color: #ff4c4c;
 
 #name p {
 color: rgba(255, 255, 255, 1);
-letter-spacing: 8.4px;
+letter-spacing: 4.4px;
 font-size: 19px;
 margin-top: 15px;
 }
