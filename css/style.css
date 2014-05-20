@@ -1880,7 +1880,6 @@ only screen and (max-device-width : 530px){
 	visibility: hidden;
 }
 
-.contents { display: none; }
 
 .grid {
 	padding: 80px 0px 0px 0px;
@@ -1930,17 +1929,15 @@ only screen and (max-device-width : 320px){
 
 
 .grid figure {
-width: 120px;
-height: 120px;
+width: 100px;
+height: 100px;
 margin: -1.6px -2px;
 position: relative;
 }
 
-.meny { display: none; }
+
 
 .grid figure img {border: none;}
-
-.contents { display: none; }
  
  }
 
