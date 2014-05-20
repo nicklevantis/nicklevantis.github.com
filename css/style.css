@@ -1946,6 +1946,11 @@ position: relative;
 .meny-arrow {display: none;
  
  }
+ 
+ .contents {display: none;
+ 
+ }
+
 
 
 }
