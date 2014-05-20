@@ -1880,6 +1880,7 @@ only screen and (max-device-width : 530px){
 	visibility: hidden;
 }
 
+.contents { display: none; }
 
 .grid {
 	padding: 80px 0px 0px 0px;
@@ -1929,8 +1930,8 @@ only screen and (max-device-width : 320px){
 
 
 .grid figure {
-width: 140px;
-height: 140px;
+width: 120px;
+height: 120px;
 margin: -1.6px -2px;
 position: relative;
 }
