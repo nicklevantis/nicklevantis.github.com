@@ -1927,6 +1927,10 @@ height: 140px;
 margin: -1.6px -2px;
 position: relative;
 }
+
+meny { display: none; }
+
+.grid figure img {border: none;}
  
  }
 
