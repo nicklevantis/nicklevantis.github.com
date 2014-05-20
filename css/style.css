@@ -1938,6 +1938,8 @@ position: relative;
 .meny { display: none; }
 
 .grid figure img {border: none;}
+
+.contents { display: none; }
  
  }
 
