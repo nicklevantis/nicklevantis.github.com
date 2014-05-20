@@ -1908,6 +1908,20 @@ position: relative;
 .style {
 left: 10.5px;
 }
+
+.grid figure img {border: none;}
+
+.meny {display: none!important;
+ 
+ }
+
+
+.meny-arrow {display: none;
+ 
+ }
+ 
+
+
 }
 
 /*IPHONE*/
@@ -1938,7 +1952,7 @@ position: relative;
 
 .grid figure img {border: none;}
 
-.meny {display: none;
+.meny {display: none!important;
  
  }
 
@@ -1947,9 +1961,7 @@ position: relative;
  
  }
  
- .contents {display: none;
- 
- }
+
 
 
 
