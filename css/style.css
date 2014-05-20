@@ -1607,7 +1607,11 @@ only screen and (max-device-width : 940px){
 @media only screen and (max-width : 720px),
 only screen and (max-device-width : 720px){
 
-meny { display: none; }
+.meny { display: none; }
+.meny-left { display: none; }
+
+.grid figure img {border: none;}
+ 
 
 .grid figure img {border: none;}
  
@@ -1931,7 +1935,7 @@ margin: -1.6px -2px;
 position: relative;
 }
 
-meny { display: none; }
+.meny { display: none; }
 
 .grid figure img {border: none;}
  
