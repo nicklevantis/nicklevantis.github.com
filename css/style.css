@@ -1889,8 +1889,8 @@ only screen and (max-device-width : 530px){
 }
 
 .grid figure {
-width: 160px;
-height: 100px;
+width: 180px;
+height: 180px;
 margin: -1.6px -2px;
 position: relative;
 }
