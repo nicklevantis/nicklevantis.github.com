@@ -1931,7 +1931,7 @@ only screen and (max-device-width : 320px){
 
 
 .grid {
-	padding: 30px 0px 0px 0px;
+	padding: 30px 10px 0px 10px;
 	width: 320px;
 	margin: 0 auto;
 	list-style: none;
