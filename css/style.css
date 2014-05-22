@@ -8,12 +8,6 @@ body, html { font-size: 100%; padding: 0; margin: 0; height: 100%; width:100%;po
 .clearfix:after { clear: both; }
 
 
-::selection {
-	background: #e2a1a1; /* Safari */
-	}
-::-moz-selection {
-	background: #e2a1a1; /* Firefox */
-}
 
 
 
@@ -70,7 +64,7 @@ a:hover {
 h2 {
 	color: #FFFEFE;
 	font-family: 'Lato', arial;
-	font-style: 19px;
+	font-size: 19px;
 	letter-spacing: 2px;
 	font-weight: 300;
 }
@@ -82,34 +76,6 @@ h3 {text-align: left;
 	color: #ffffff;
 }
 
-
-/**** BORDER BROWSER ****/
-
-/*
-
-#top, #bottom, #left, #right {
-	background: #ff6161;
-	
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 12px;
-		z-index: 1000;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		z-index: 1000;
-		left: 0; right: 0;
-		height: 12px;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
-		
-*/
-		
 		
 .wrap{
 	max-width: 600px;
@@ -123,35 +89,6 @@ h3 {text-align: left;
 }
 		
 		
-
-/**** BORDER BROWSER JOUNRAL ****/
-
-
-#top2, #bottom2, #left2, #right2 {
-	background: rgba(240,239,232,1);
-	
-	position: fixed;
-	}
-	#left2, #right2 {
-		top: 0; bottom: 0;
-		width: 15px;
-		z-index: 900;
-		}
-		#left2 { left: 0; }
-		#right2 { right: 0; }
-		
-	#top2, #bottom2 {
-		z-index: 900;
-		left: 0; right: 0;
-		height: 15px;
-		}
-		#top2 { top: 0; }
-		#bottom2 { bottom: 0; }
-		
-
-
-
-
 
 @charset "utf-8";
 
