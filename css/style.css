@@ -1,4 +1,4 @@
-
+@charset "utf-8";
 
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0; height: 100%; width:100%;position:absolute; }
@@ -90,7 +90,6 @@ h3 {text-align: left;
 		
 		
 
-@charset "utf-8";
 
 /* Preloader */
 #preloader {
@@ -188,12 +187,12 @@ font-weight: 300;
 color: #FFFEFE;
 }
 
-}
+
 
 
 #name:hover {
 color:#ff5959;
- -o-transitionbackground 0.3s ease-in-out ;
+ -o-transitionbackground: 0.3s ease-in-out ;
   -ms-transition:background 0.3s ease-in-out ;
   -moz-transition:background 0.3s ease-in-out ;
   -webkit-transition:background 0.3s ease-in-out ;}
@@ -448,7 +447,7 @@ font-family: 'Lato', arial;
   	  	
 }
 
-.tumblr_audio {background-color: none;
+.tumblr_audio {background-color: transparent;
 	color:white;
 	
 }
@@ -531,14 +530,6 @@ font-family: 'Lato', arial;
 
 
 
-		
-		
-		
-
-
-/************************************************************************* NAVIGATION *************************************************************************/
-
-
 
 nav{
     margin:30px auto 0;
@@ -604,7 +595,7 @@ nav a:hover{
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
-	background-color: none;
+	background-color: transparent;
 }
 
 
@@ -639,7 +630,7 @@ padding: 30px 0px 0px 0px;
 	margin: 0 auto ;
 	list-style: none;
 	text-align: center;
-	background-color: none;		
+	background-color: transparent;		
 
 }
 
@@ -892,7 +883,7 @@ visibility: hidden;
 	-ms-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	font-size: 12px;
-	text-align: centers
+	text-align: center;
 }
 
 .fb {color:#0027ff}
@@ -953,7 +944,7 @@ visibility: hidden;
 			width: 200px;
 			list-style: none;
 			font-size: 20px;
-			font-weight: 100px;
+			font-weight: 100;
 				color: #FC5255;
 			padding: 3px 5px;
 		}
@@ -979,7 +970,7 @@ visibility: hidden;
 	        padding-left: 10px;
 }
 
-.meny-arrow: hover { color:#FC5255;}
+.meny-arrow:hover { color:#FC5255;}
 	.meny-left .meny-arrow {
 		left: 1px;
 		top: 50%;
