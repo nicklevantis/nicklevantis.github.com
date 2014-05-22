@@ -18,8 +18,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
   <script src="js/modernizr.custom.js">
   </script>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js">
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>   
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">
   </script>
   <script type="text/javascript" src="http://assets.tumblr.com/javascript/tumblelog.js">
   </script>
@@ -149,11 +149,11 @@ display: none;
                 content = '<div class="tumblr_body"><img class="tumblr_photo" src="' + posts[r]["photo-url-1280"] + '"/></div><div class="tumblr_body">' + posts[r]["photo-caption"] + '</div>';
                 break;
               case "audio":
-                title = '<h2 class="tumblr_title">' + posts[r]["id3-title"] + ' - ' + posts[r]["id3-artist"] + '</h2><h3 class="tumblr_date">' + posts[r]["date"] + '</h3>';
+                title = '<h2 class="tumblr_title">' + posts[r]["id3-title"] + '  ' + '</h2><h3 class="tumblr_date">' + posts[r]["date"] + '</h3>';
                 content = '<div class="audio-embed">' + posts[r]["audio-embed"] + posts[r]["audio-caption"] + '</div>';
                 break;
               case "video":
-                title = '<h2 class="tumblr_title">Video</h2><h3 class="tumblr_date">' + posts[r]["date"] + '</h3>';
+                title = '<h2 class="tumblr_title"></h2><h3 class="tumblr_date">' + posts[r]["date"] + '</h3>';
                 content = '<div class="tumblr_body">' + posts[r]["video-player-500"] + posts[r]["video-caption"] + '</div>';
                 //due to the posts being added to page after load the video won't display unless you add the variables to this array and invoke them once they are drawn to page.
                 vidsArray.push(posts[r]["video-player"].substr(posts[r]["video-player"].indexOf('rVideo(') + 7, (posts[r]["video-player"].indexOf('</scrip')-(posts[r]["video-player"].indexOf('rVideo(') + 7))).split(","));
@@ -227,10 +227,7 @@ display: none;
   
   
   
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js">
-  </script>
-  <script src="js/toucheffects.js">
+   <script src="js/toucheffects.js">
   </script>
   <script src='js/fluidvids.js'>
   </script>
